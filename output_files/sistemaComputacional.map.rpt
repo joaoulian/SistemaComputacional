@@ -1,0 +1,1780 @@
+Analysis & Synthesis report for sistemaComputacional
+Fri Jun 30 12:52:49 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: temporizador:t
+ 14. Port Connectivity Checks: "quebraNumero:q1|binarioParaBCD:binarioParaBCD1"
+ 15. Port Connectivity Checks: "mux:multiplexador5"
+ 16. Port Connectivity Checks: "mux:multiplexador0"
+ 17. Port Connectivity Checks: "contadorDePrograma:PC"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+ 21. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jun 30 12:52:49 2017           ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
+; Revision Name                      ; sistemaComputacional                            ;
+; Top-level Entity Name              ; sistemaComputacional                            ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 257                                             ;
+;     Total combinational functions  ; 209                                             ;
+;     Dedicated logic registers      ; 81                                              ;
+; Total registers                    ; 81                                              ;
+; Total pins                         ; 69                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                            ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Option                                                                     ; Setting              ; Default Value        ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Device                                                                     ; EP4CE115F29C7        ;                      ;
+; Top-level entity name                                                      ; sistemaComputacional ; sistemaComputacional ;
+; Family name                                                                ; Cyclone IV E         ; Cyclone IV GX        ;
+; Use smart compilation                                                      ; Off                  ; Off                  ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                   ;
+; Enable compact report table                                                ; Off                  ; Off                  ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto                 ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                  ;
+; Preserve fewer node names                                                  ; On                   ; On                   ;
+; OpenCore Plus hardware evaluation                                          ; Enable               ; Enable               ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001         ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993            ;
+; State Machine Processing                                                   ; Auto                 ; Auto                 ;
+; Safe State Machine                                                         ; Off                  ; Off                  ;
+; Extract Verilog State Machines                                             ; On                   ; On                   ;
+; Extract VHDL State Machines                                                ; On                   ; On                   ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                  ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                   ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                   ;
+; Parallel Synthesis                                                         ; On                   ; On                   ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto                 ;
+; NOT Gate Push-Back                                                         ; On                   ; On                   ;
+; Power-Up Don't Care                                                        ; On                   ; On                   ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                  ;
+; Remove Duplicate Registers                                                 ; On                   ; On                   ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                  ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                  ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                  ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                  ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                   ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                  ;
+; Optimization Technique                                                     ; Balanced             ; Balanced             ;
+; Carry Chain Length                                                         ; 70                   ; 70                   ;
+; Auto Carry Chains                                                          ; On                   ; On                   ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                  ;
+; Auto ROM Replacement                                                       ; On                   ; On                   ;
+; Auto RAM Replacement                                                       ; On                   ; On                   ;
+; Auto DSP Block Replacement                                                 ; On                   ; On                   ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto                 ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                   ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                  ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                   ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                  ;
+; Auto RAM Block Balancing                                                   ; On                   ; On                   ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                  ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                  ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                   ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                  ;
+; Timing-Driven Synthesis                                                    ; On                   ; On                   ;
+; Report Parameter Settings                                                  ; On                   ; On                   ;
+; Report Source Assignments                                                  ; On                   ; On                   ;
+; Report Connectivity Checks                                                 ; On                   ; On                   ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                  ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                    ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation   ; Normal compilation   ;
+; HDL message level                                                          ; Level2               ; Level2               ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                  ;
+; Clock MUX Protection                                                       ; On                   ; On                   ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                  ;
+; Block Design Naming                                                        ; Auto                 ; Auto                 ;
+; SDC constraint protection                                                  ; Off                  ; Off                  ;
+; Synthesis Effort                                                           ; Auto                 ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                   ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                  ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium               ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto                 ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                   ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+; bancoDeRegistradores.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/bancoDeRegistradores.v       ;         ;
+; ula.v                            ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/ula.v                        ;         ;
+; extensor17.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/extensor17.v                 ;         ;
+; contadorDePrograma.v             ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v         ;         ;
+; memoriaDeInstrucoes.v            ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeInstrucoes.v        ;         ;
+; memoriaDeDados.v                 ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeDados.v             ;         ;
+; entradaDeDadosSwitch.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v       ;         ;
+; binarioParaBCD.v                 ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v             ;         ;
+; quebraNumero.v                   ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/quebraNumero.v               ;         ;
+; extensor27.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/extensor27.v                 ;         ;
+; unidadeDeControle.v              ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/unidadeDeControle.v          ;         ;
+; sistemaComputacional.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v       ;         ;
+; mux.v                            ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/mux.v                        ;         ;
+; seteSegmentos.v                  ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/seteSegmentos.v              ;         ;
+; seteSegmentosSinalNegativo.v     ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/seteSegmentosSinalNegativo.v ;         ;
+; extensor22.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/extensor22.v                 ;         ;
+; binarioParaBCD2.v                ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD2.v            ;         ;
+; temporizador.v                   ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/temporizador.v               ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                           ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Estimated Total logic elements              ; 257                     ;
+;                                             ;                         ;
+; Total combinational functions               ; 209                     ;
+; Logic element usage by number of LUT inputs ;                         ;
+;     -- 4 input functions                    ; 146                     ;
+;     -- 3 input functions                    ; 23                      ;
+;     -- <=2 input functions                  ; 40                      ;
+;                                             ;                         ;
+; Logic elements by mode                      ;                         ;
+;     -- normal mode                          ; 195                     ;
+;     -- arithmetic mode                      ; 14                      ;
+;                                             ;                         ;
+; Total registers                             ; 81                      ;
+;     -- Dedicated logic registers            ; 81                      ;
+;     -- I/O registers                        ; 0                       ;
+;                                             ;                         ;
+; I/O pins                                    ; 69                      ;
+;                                             ;                         ;
+; Embedded Multiplier 9-bit elements          ; 0                       ;
+;                                             ;                         ;
+; Maximum fan-out node                        ; temporizador:t|count[2] ;
+; Maximum fan-out                             ; 79                      ;
+; Total fan-out                               ; 1083                    ;
+; Average fan-out                             ; 2.53                    ;
++---------------------------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name          ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
+; |sistemaComputacional                  ; 209 (0)             ; 81 (0)                    ; 0           ; 0            ; 0       ; 0         ; 69   ; 0            ; |sistemaComputacional                                                ; sistemaComputacional ; work         ;
+;    |bancoDeRegistradores:br1|          ; 30 (30)             ; 48 (48)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|bancoDeRegistradores:br1                       ; bancoDeRegistradores ; work         ;
+;    |binarioParaBCD2:bOp1|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|binarioParaBCD2:bOp1                           ; binarioParaBCD2      ; work         ;
+;    |contadorDePrograma:PC|             ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|contadorDePrograma:PC                          ; contadorDePrograma   ; work         ;
+;    |memoriaDeDados:memDados|           ; 10 (10)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|memoriaDeDados:memDados                        ; memoriaDeDados       ; work         ;
+;    |memoriaDeInstrucoes:M1|            ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|memoriaDeInstrucoes:M1                         ; memoriaDeInstrucoes  ; work         ;
+;    |mux:multiplexador2|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|mux:multiplexador2                             ; mux                  ; work         ;
+;    |mux:multiplexador8|                ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|mux:multiplexador8                             ; mux                  ; work         ;
+;    |quebraNumero:q1|                   ; 93 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|quebraNumero:q1                                ; quebraNumero         ; work         ;
+;       |binarioParaBCD:binarioParaBCD1| ; 71 (71)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|quebraNumero:q1|binarioParaBCD:binarioParaBCD1 ; binarioParaBCD       ; work         ;
+;    |seteSegmentos:c1|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:c1                               ; seteSegmentos        ; work         ;
+;    |seteSegmentos:d1|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:d1                               ; seteSegmentos        ; work         ;
+;    |seteSegmentos:d2|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:d2                               ; seteSegmentos        ; work         ;
+;    |seteSegmentos:u1|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:u1                               ; seteSegmentos        ; work         ;
+;    |seteSegmentos:u2|                  ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:u2                               ; seteSegmentos        ; work         ;
+;    |temporizador:t|                    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|temporizador:t                                 ; temporizador         ; work         ;
+;    |unidadeDeControle:uc|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|unidadeDeControle:uc                           ; unidadeDeControle    ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                              ;
++-----------------------------------------------------------+-----------------------------+------------------------+
+; Latch Name                                                ; Latch Enable Signal         ; Free of Timing Hazards ;
++-----------------------------------------------------------+-----------------------------+------------------------+
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[0] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[1] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[2] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[3] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[0]  ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[1]  ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[2]  ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[3]  ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[0] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[1] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[2] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[3] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; Number of user-specified and inferred latches = 12        ;                             ;                        ;
++-----------------------------------------------------------+-----------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                         ;
++---------------------------------------------------+----------------------------------------+
+; Register name                                     ; Reason for Removal                     ;
++---------------------------------------------------+----------------------------------------+
+; memoriaDeInstrucoes:M1|PrimeiroClock[1..31]       ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[0][27] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[0][28] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[0][29] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[0][30] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[0][31] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][0]  ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][1]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][2]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][3]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][4]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][5]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][6]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][7]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][8]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][9]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][10] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][11] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][12] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][13] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][14] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][15] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][16] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][17] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][18] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][19] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][20] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][21] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][22] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][23] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][24] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][25] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][26] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][27] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][28] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][29] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][30] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][31] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][0]  ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][1]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][2]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][3]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][4]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][5]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][6]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][7]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][8]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][9]  ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][10] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][11] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][12] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][13] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][14] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][15] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][16] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][17] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][18] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][19] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][20] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][21] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][22] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][23] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][24] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][25] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][26] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][27] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][28] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][29] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][30] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][31] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][22] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][23] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][24] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][25] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][26] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][27] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][28] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][29] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][30] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][31] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][27] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][28] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][29] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][30] ; Stuck at GND due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][31] ; Stuck at VCC due to stuck port data_in ;
+; memoriaDeInstrucoes:M1|PrimeiroClock[0]           ; Lost fanout                            ;
+; contadorDePrograma:PC|primeiroClock[1..31]        ; Stuck at GND due to stuck port data_in ;
+; bancoDeRegistradores:br1|estagioEntradaBanco      ; Stuck at GND due to stuck port data_in ;
+; bancoDeRegistradores:br1|banco~128                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~129                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~130                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~131                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~132                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~133                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~134                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~135                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~136                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~137                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~138                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~139                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~140                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~141                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~142                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~143                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~144                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~145                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~146                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~147                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~148                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~149                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~150                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~151                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~152                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~153                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~154                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~155                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~156                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~157                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~158                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~159                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~160                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~161                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~162                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~163                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~164                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~165                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~166                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~167                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~168                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~169                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~170                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~171                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~172                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~173                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~174                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~175                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~176                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~177                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~178                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~179                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~180                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~181                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~182                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~183                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~184                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~185                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~186                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~187                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~188                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~189                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~190                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~191                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~192                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~193                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~194                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~195                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~196                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~197                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~198                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~199                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~200                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~201                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~202                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~203                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~204                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~205                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~206                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~207                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~208                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~209                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~210                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~211                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~212                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~213                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~214                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~215                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~216                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~217                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~218                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~219                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~220                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~221                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~222                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~223                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~224                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~225                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~226                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~227                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~228                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~229                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~230                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~231                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~232                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~233                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~234                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~235                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~236                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~237                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~238                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~239                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~240                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~241                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~242                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~243                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~244                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~245                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~246                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~247                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~248                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~249                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~250                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~251                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~252                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~253                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~254                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~255                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~256                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~257                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~258                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~259                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~260                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~261                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~262                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~263                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~264                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~265                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~266                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~267                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~268                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~269                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~270                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~271                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~272                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~273                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~274                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~275                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~276                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~277                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~278                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~279                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~280                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~281                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~282                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~283                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~284                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~285                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~286                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~287                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~288                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~289                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~290                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~291                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~292                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~293                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~294                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~295                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~296                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~297                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~298                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~299                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~300                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~301                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~302                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~303                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~304                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~305                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~306                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~307                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~308                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~309                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~310                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~311                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~312                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~313                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~314                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~315                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~316                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~317                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~318                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~319                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~320                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~321                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~322                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~323                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~324                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~325                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~326                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~327                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~328                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~329                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~330                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~331                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~332                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~333                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~334                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~335                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~336                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~337                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~338                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~339                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~340                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~341                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~342                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~343                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~344                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~345                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~346                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~347                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~348                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~349                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~350                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~351                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~352                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~353                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~354                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~355                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~356                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~357                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~358                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~359                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~360                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~361                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~362                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~363                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~364                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~365                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~366                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~367                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~368                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~369                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~370                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~371                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~372                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~373                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~374                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~375                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~376                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~377                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~378                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~379                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~380                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~381                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~382                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~383                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~384                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~385                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~386                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~387                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~388                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~389                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~390                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~391                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~392                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~393                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~394                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~395                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~396                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~397                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~398                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~399                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~400                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~401                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~402                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~403                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~404                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~405                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~406                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~407                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~408                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~409                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~410                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~411                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~412                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~413                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~414                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~415                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~416                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~417                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~418                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~419                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~420                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~421                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~422                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~423                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~424                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~425                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~426                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~427                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~428                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~429                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~430                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~431                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~432                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~433                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~434                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~435                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~436                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~437                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~438                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~439                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~440                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~441                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~442                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~443                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~444                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~445                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~446                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~447                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~448                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~449                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~450                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~451                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~452                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~453                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~454                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~455                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~456                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~457                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~458                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~459                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~460                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~461                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~462                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~463                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~464                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~465                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~466                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~467                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~468                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~469                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~470                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~471                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~472                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~473                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~474                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~475                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~476                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~477                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~478                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~479                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~480                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~481                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~482                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~483                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~484                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~485                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~486                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~487                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~488                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~489                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~490                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~491                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~492                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~493                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~494                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~495                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~496                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~497                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~498                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~499                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~500                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~501                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~502                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~503                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~504                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~505                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~506                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~507                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~508                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~509                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~510                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~511                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~512                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~513                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~514                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~515                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~516                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~517                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~518                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~519                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~520                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~521                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~522                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~523                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~524                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~525                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~526                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~527                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~528                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~529                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~530                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~531                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~532                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~533                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~534                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~535                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~536                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~537                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~538                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~539                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~540                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~541                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~542                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~543                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~544                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~545                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~546                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~547                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~548                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~549                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~550                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~551                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~552                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~553                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~554                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~555                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~556                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~557                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~558                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~559                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~560                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~561                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~562                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~563                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~564                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~565                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~566                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~567                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~568                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~569                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~570                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~571                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~572                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~573                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~574                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~575                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~576                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~577                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~578                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~579                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~580                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~581                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~582                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~583                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~584                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~585                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~586                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~587                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~588                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~589                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~590                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~591                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~592                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~593                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~594                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~595                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~596                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~597                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~598                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~599                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~600                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~601                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~602                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~603                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~604                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~605                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~606                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~607                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~608                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~609                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~610                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~611                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~612                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~613                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~614                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~615                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~616                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~617                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~618                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~619                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~620                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~621                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~622                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~623                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~624                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~625                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~626                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~627                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~628                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~629                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~630                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~631                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~632                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~633                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~634                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~635                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~636                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~637                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~638                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~639                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~640                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~641                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~642                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~643                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~644                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~645                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~646                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~647                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~648                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~649                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~650                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~651                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~652                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~653                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~654                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~655                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~656                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~657                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~658                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~659                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~660                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~661                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~662                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~663                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~664                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~665                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~666                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~667                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~668                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~669                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~670                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~671                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~672                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~673                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~674                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~675                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~676                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~677                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~678                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~679                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~680                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~681                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~682                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~683                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~684                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~685                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~686                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~687                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~688                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~689                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~690                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~691                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~692                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~693                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~694                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~695                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~696                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~697                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~698                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~699                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~700                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~701                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~702                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~703                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~704                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~705                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~706                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~707                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~708                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~709                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~710                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~711                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~712                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~713                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~714                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~715                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~716                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~717                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~718                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~719                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~720                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~721                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~722                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~723                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~724                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~725                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~726                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~727                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~728                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~729                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~730                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~731                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~732                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~733                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~734                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~735                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~736                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~737                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~738                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~739                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~740                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~741                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~742                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~743                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~744                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~745                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~746                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~747                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~748                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~749                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~750                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~751                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~752                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~753                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~754                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~755                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~756                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~757                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~758                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~759                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~760                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~761                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~762                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~763                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~764                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~765                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~766                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~767                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~768                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~769                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~770                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~771                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~772                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~773                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~774                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~775                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~776                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~777                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~778                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~779                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~780                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~781                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~782                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~783                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~784                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~785                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~786                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~787                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~788                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~789                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~790                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~791                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~792                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~793                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~794                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~795                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~796                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~797                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~798                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~799                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~800                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~801                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~802                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~803                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~804                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~805                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~806                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~807                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~808                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~809                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~810                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~811                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~812                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~813                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~814                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~815                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~816                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~817                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~818                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~819                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~820                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~821                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~822                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~823                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~824                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~825                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~826                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~827                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~828                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~829                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~830                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~831                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~832                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~833                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~834                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~835                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~836                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~837                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~838                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~839                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~840                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~841                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~842                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~843                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~844                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~845                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~846                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~847                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~848                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~849                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~850                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~851                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~852                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~853                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~854                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~855                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~856                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~857                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~858                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~859                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~860                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~861                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~862                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~863                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~864                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~865                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~866                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~867                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~868                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~869                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~870                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~871                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~872                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~873                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~874                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~875                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~876                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~877                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~878                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~879                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~880                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~881                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~882                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~883                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~884                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~885                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~886                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~887                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~888                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~889                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~890                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~891                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~892                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~893                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~894                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~895                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~896                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~897                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~898                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~899                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~900                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~901                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~902                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~903                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~904                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~905                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~906                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~907                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~908                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~909                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~910                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~911                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~912                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~913                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~914                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~915                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~916                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~917                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~918                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~919                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~920                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~921                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~922                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~923                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~924                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~925                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~926                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~927                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~928                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~929                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~930                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~931                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~932                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~933                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~934                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~935                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~936                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~937                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~938                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~939                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~940                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~941                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~942                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~943                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~944                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~945                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~946                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~947                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~948                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~949                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~950                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~951                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~952                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~953                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~954                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~955                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~956                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~957                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~958                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~959                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~960                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~961                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~962                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~963                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~964                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~965                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~966                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~967                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~968                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~969                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~970                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~971                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~972                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~973                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~974                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~975                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~976                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~977                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~978                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~979                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~980                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~981                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~982                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~983                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~984                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~985                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~986                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~987                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~988                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~989                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~990                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~991                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~992                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~993                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~994                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~995                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~996                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~997                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~998                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~999                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1000               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1001               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1002               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1003               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1004               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1005               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1006               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1007               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1008               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1009               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1010               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1011               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1012               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1013               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1014               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1015               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1016               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1017               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1018               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1019               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1020               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1021               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1022               ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~1023               ; Lost fanout                            ;
+; contadorDePrograma:PC|pc[5..31]                   ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~62                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~94                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~30                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~126                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~93                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~61                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~29                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~125                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~60                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~92                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~28                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~124                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~91                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~59                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~27                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~123                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~58                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~90                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~26                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~122                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~89                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~57                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~25                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~121                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~56                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~88                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~24                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~120                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~87                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~55                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~23                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~119                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~54                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~86                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~22                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~118                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~85                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~53                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~21                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~117                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~52                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~84                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~20                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~116                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~83                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~51                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~19                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~115                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~50                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~82                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~18                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~114                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~81                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~49                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~17                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~113                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~48                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~80                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~16                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~112                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~79                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~47                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~15                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~111                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~46                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~78                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~14                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~110                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~77                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~45                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~13                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~109                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~44                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~76                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~12                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~108                ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~75                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~43                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~11                 ; Lost fanout                            ;
+; bancoDeRegistradores:br1|banco~107                ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~30         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~62         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~29         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~61         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~28         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~60         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~27         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~59         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~26         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~58         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~25         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~57         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~24         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~56         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~23         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~55         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~22         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~54         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~21         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~53         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~20         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~52         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~19         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~51         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~18         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~50         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~17         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~49         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~16         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~48         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~15         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~47         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~14         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~46         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~13         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~45         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~12         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~44         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~11         ; Lost fanout                            ;
+; memoriaDeDados:memDados|memoriaDeDados~43         ; Lost fanout                            ;
+; Total Number of Removed Registers = 1191          ;                                        ;
++---------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                  ;
++---------------------------------------------------+---------------------------+----------------------------------------------+
+; Register name                                     ; Reason for Removal        ; Registers Removed due to This Register       ;
++---------------------------------------------------+---------------------------+----------------------------------------------+
+; bancoDeRegistradores:br1|banco~85                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~21,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~53    ;
+; bancoDeRegistradores:br1|banco~75                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~11,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~43    ;
+; bancoDeRegistradores:br1|banco~44                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~12,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~44    ;
+; bancoDeRegistradores:br1|banco~77                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~13,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~45    ;
+; bancoDeRegistradores:br1|banco~46                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~14,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~46    ;
+; bancoDeRegistradores:br1|banco~79                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~15,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~47    ;
+; bancoDeRegistradores:br1|banco~48                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~16,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~48    ;
+; bancoDeRegistradores:br1|banco~81                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~17,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~49    ;
+; bancoDeRegistradores:br1|banco~50                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~18,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~50    ;
+; bancoDeRegistradores:br1|banco~83                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~19,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~51    ;
+; bancoDeRegistradores:br1|banco~52                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~20,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~52    ;
+; bancoDeRegistradores:br1|banco~54                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~22,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~54    ;
+; bancoDeRegistradores:br1|banco~87                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~23,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~55    ;
+; bancoDeRegistradores:br1|banco~56                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~24,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~56    ;
+; bancoDeRegistradores:br1|banco~89                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~25,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~57    ;
+; bancoDeRegistradores:br1|banco~58                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~26,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~58    ;
+; bancoDeRegistradores:br1|banco~91                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~27,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~59    ;
+; bancoDeRegistradores:br1|banco~60                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~28,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~60    ;
+; bancoDeRegistradores:br1|banco~93                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~29,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~61    ;
+; bancoDeRegistradores:br1|banco~62                 ; Lost Fanouts              ; memoriaDeDados:memDados|memoriaDeDados~30,   ;
+;                                                   ;                           ; memoriaDeDados:memDados|memoriaDeDados~62    ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[0][27] ; Stuck at VCC              ; bancoDeRegistradores:br1|estagioEntradaBanco ;
+;                                                   ; due to stuck port data_in ;                                              ;
++---------------------------------------------------+---------------------------+----------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 81    ;
+; Number of registers using Synchronous Clear  ; 5     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 77    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; 9:1                ; 5 bits    ; 30 LEs        ; 5 LEs                ; 25 LEs                 ; Yes        ; |sistemaComputacional|contadorDePrograma:PC|pc[31]       ;
+; 9:1                ; 10 bits   ; 60 LEs        ; 20 LEs               ; 40 LEs                 ; Yes        ; |sistemaComputacional|contadorDePrograma:PC|pc[18]       ;
+; 9:1                ; 17 bits   ; 102 LEs       ; 34 LEs               ; 68 LEs                 ; Yes        ; |sistemaComputacional|contadorDePrograma:PC|pc[0]        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sistemaComputacional|unidadeDeControle:uc|pcControle[2] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |sistemaComputacional|mux:multiplexador5|saida[0]        ;
+; 15:1               ; 9 bits    ; 90 LEs        ; 54 LEs               ; 36 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[27]       ;
+; 15:1               ; 13 bits   ; 130 LEs       ; 91 LEs               ; 39 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[9]        ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[8]        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: temporizador:t ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; n              ; 2     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "quebraNumero:q1|binarioParaBCD:binarioParaBCD1"                                                                                                                                       ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                             ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; binario ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux:multiplexador5"                                                                                                                                    ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                            ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; entrada1 ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "entrada1[31..5]" will be connected to GND. ;
+; entrada2 ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "entrada2[31..5]" will be connected to GND. ;
+; saida    ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (5 bits) it drives; bit(s) "saida[31..5]" have no fanouts                         ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux:multiplexador0"                                                                                                                                    ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                            ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; entrada1 ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "entrada1[31..5]" will be connected to GND. ;
+; entrada2 ; Input  ; Warning  ; Input port expression (5 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "entrada2[31..5]" will be connected to GND. ;
+; saida    ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (5 bits) it drives; bit(s) "saida[31..5]" have no fanouts                         ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contadorDePrograma:PC"                                                                                                                                                                           ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port               ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; deslocamentoBranch ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (17 bits) it drives.  The 15 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 69                          ;
+; cycloneiii_ff         ; 81                          ;
+;     ENA               ; 72                          ;
+;     ENA CLR SCLR      ; 5                           ;
+;     plain             ; 4                           ;
+; cycloneiii_lcell_comb ; 218                         ;
+;     arith             ; 14                          ;
+;         2 data inputs ; 14                          ;
+;     normal            ; 204                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 23                          ;
+;         3 data inputs ; 23                          ;
+;         4 data inputs ; 146                         ;
+;                       ;                             ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 9.20                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+    Info: Processing started: Fri Jun 30 12:52:33 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sistemaComputacional -c sistemaComputacional
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file bancoDeRegistradores.v
+    Info (12023): Found entity 1: bancoDeRegistradores File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/bancoDeRegistradores.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ula.v
+    Info (12023): Found entity 1: ula File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/ula.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extensor17.v
+    Info (12023): Found entity 1: extensor17 File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/extensor17.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contadorDePrograma.v
+    Info (12023): Found entity 1: contadorDePrograma File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memoriaDeInstrucoes.v
+    Info (12023): Found entity 1: memoriaDeInstrucoes File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeInstrucoes.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memoriaDeDados.v
+    Info (12023): Found entity 1: memoriaDeDados File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeDados.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file entradaDeDadosSwitch.v
+    Info (12023): Found entity 1: entradaDeDadosSwitch File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file binarioParaBCD.v
+    Info (12023): Found entity 1: binarioParaBCD File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file quebraNumero.v
+    Info (12023): Found entity 1: quebraNumero File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/quebraNumero.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extensor27.v
+    Info (12023): Found entity 1: extensor27 File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/extensor27.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file unidadeDeControle.v
+    Info (12023): Found entity 1: unidadeDeControle File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/unidadeDeControle.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sistemaComputacional.v
+    Info (12023): Found entity 1: sistemaComputacional File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 1
+Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus Prime megafunction library File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux.v
+    Info (12023): Found entity 1: mux File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file seteSegmentos.v
+    Info (12023): Found entity 1: seteSegmentos File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/seteSegmentos.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file seteSegmentosSinalNegativo.v
+    Info (12023): Found entity 1: seteSegmentosSinalNegativo File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/seteSegmentosSinalNegativo.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extensor22.v
+    Info (12023): Found entity 1: extensor22 File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/extensor22.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file binarioParaBCD2.v
+    Info (12023): Found entity 1: binarioParaBCD2 File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file temporizador.v
+    Info (12023): Found entity 1: temporizador File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/temporizador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file DeBounce.v
+    Info (12023): Found entity 1: DeBounce File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/DeBounce.v Line: 2
+Info (12127): Elaborating entity "sistemaComputacional" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at sistemaComputacional.v(125): truncated value with size 32 to match size of target (1) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 125
+Info (12128): Elaborating entity "temporizador" for hierarchy "temporizador:t" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 82
+Warning (10230): Verilog HDL assignment warning at temporizador.v(11): truncated value with size 32 to match size of target (3) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/temporizador.v Line: 11
+Info (12128): Elaborating entity "contadorDePrograma" for hierarchy "contadorDePrograma:PC" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 89
+Info (12128): Elaborating entity "extensor27" for hierarchy "contadorDePrograma:PC|extensor27:extendeJump" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 20
+Info (12128): Elaborating entity "extensor17" for hierarchy "contadorDePrograma:PC|extensor17:extendeBranch" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 23
+Info (12128): Elaborating entity "memoriaDeInstrucoes" for hierarchy "memoriaDeInstrucoes:M1" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 93
+Warning (10030): Net "memoriaDeInstrucoes[4][26..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[20..5]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[3][21..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[0][26..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeInstrucoes.v Line: 13
+Info (12128): Elaborating entity "unidadeDeControle" for hierarchy "unidadeDeControle:uc" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 113
+Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(109): variable "zero" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/unidadeDeControle.v Line: 109
+Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(111): variable "estagioEntradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/unidadeDeControle.v Line: 111
+Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(111): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/unidadeDeControle.v Line: 111
+Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(117): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/unidadeDeControle.v Line: 117
+Info (12128): Elaborating entity "extensor22" for hierarchy "extensor22:imediatoExtensor22" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 119
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexador0" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 130
+Info (12128): Elaborating entity "entradaDeDadosSwitch" for hierarchy "entradaDeDadosSwitch:e1" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 137
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(21): variable "estagioEntradaUC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 21
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(22): variable "entradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 22
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(23): variable "entradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 23
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(25): variable "estagioEntradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 25
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(26): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 26
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(27): variable "estagioEntradaUC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 27
+Warning (10240): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(19): inferring latch(es) for variable "dado", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[0]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[1]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[2]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[3]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[4]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[5]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[6]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[7]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[8]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[9]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[10]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[11]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[12]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[13]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[14]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[15]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[16]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[17]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[18]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[19]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[20]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[21]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[22]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[23]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[24]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[25]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[26]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[27]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[28]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[29]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[30]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[31]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Info (12128): Elaborating entity "bancoDeRegistradores" for hierarchy "bancoDeRegistradores:br1" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 164
+Info (12128): Elaborating entity "ula" for hierarchy "ula:cpuULA" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 174
+Info (12128): Elaborating entity "memoriaDeDados" for hierarchy "memoriaDeDados:memDados" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 186
+Info (12128): Elaborating entity "quebraNumero" for hierarchy "quebraNumero:q1" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 199
+Info (12128): Elaborating entity "binarioParaBCD" for hierarchy "quebraNumero:q1|binarioParaBCD:binarioParaBCD1" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/quebraNumero.v Line: 34
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(34): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 34
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(36): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 36
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(38): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 38
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "centena", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "dezena", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "unidade", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "deslocado", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "unidade[0]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "unidade[1]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "unidade[2]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "unidade[3]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "dezena[0]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "dezena[1]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "dezena[2]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "dezena[3]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "centena[0]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "centena[1]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "centena[2]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "centena[3]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+Info (12128): Elaborating entity "binarioParaBCD2" for hierarchy "binarioParaBCD2:bOp1" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 203
+Warning (10036): Verilog HDL or VHDL warning at binarioParaBCD2.v(9): object "centena" assigned a value but never read File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD2.v Line: 9
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD2.v(24): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD2.v Line: 24
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD2.v(26): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD2.v Line: 26
+Info (12128): Elaborating entity "seteSegmentos" for hierarchy "seteSegmentos:d2" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 206
+Info (12128): Elaborating entity "seteSegmentosSinalNegativo" for hierarchy "seteSegmentosSinalNegativo:n1" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 221
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "bancoDeRegistradores:br1|banco" is uninferred due to asynchronous read logic File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/bancoDeRegistradores.v Line: 30
+    Info (276007): RAM logic "memoriaDeDados:memDados|memoriaDeDados" is uninferred due to asynchronous read logic File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/memoriaDeDados.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[1]" is permanently disabled File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[2]" is permanently disabled File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[3]" is permanently disabled File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[4]" is permanently disabled File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[5]" is permanently disabled File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[6]" is permanently disabled File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[7]" is permanently disabled File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[8]" is permanently disabled File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/entradaDeDadosSwitch.v Line: 19
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[1] has unsafe behavior File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 31
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[2] has unsafe behavior File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 31
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[3] has unsafe behavior File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 31
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[0] has unsafe behavior File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 31
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[1] has unsafe behavior File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 31
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[2] has unsafe behavior File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 31
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[3] has unsafe behavior File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/contadorDePrograma.v Line: 31
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "saidaNegativo[1]" is stuck at VCC File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 63
+    Warning (13410): Pin "saidaNegativo[2]" is stuck at VCC File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 63
+    Warning (13410): Pin "saidaNegativo[3]" is stuck at VCC File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 63
+    Warning (13410): Pin "saidaNegativo[4]" is stuck at VCC File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 63
+    Warning (13410): Pin "saidaNegativo[5]" is stuck at VCC File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 63
+    Warning (13410): Pin "saidaNegativo[6]" is stuck at VCC File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 63
+    Warning (13410): Pin "saidaDezenaOpcode[5]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 75
+    Warning (13410): Pin "rs[0]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 46
+    Warning (13410): Pin "rs[1]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 46
+    Warning (13410): Pin "rs[2]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 46
+    Warning (13410): Pin "rs[3]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 46
+    Warning (13410): Pin "rs[4]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 46
+    Warning (13410): Pin "rt[0]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 47
+    Warning (13410): Pin "rt[1]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 47
+    Warning (13410): Pin "rt[2]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 47
+    Warning (13410): Pin "rt[3]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 47
+    Warning (13410): Pin "rt[4]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 47
+    Warning (13410): Pin "rd[2]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 48
+    Warning (13410): Pin "rd[3]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 48
+    Warning (13410): Pin "rd[4]" is stuck at GND File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 48
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1044 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/output_files/sistemaComputacional.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "entradaSwitch[0]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+    Warning (15610): No output dependent on input pin "enter" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 18
+    Warning (15610): No output dependent on input pin "entradaSwitch[1]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+    Warning (15610): No output dependent on input pin "entradaSwitch[2]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+    Warning (15610): No output dependent on input pin "entradaSwitch[3]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+    Warning (15610): No output dependent on input pin "entradaSwitch[4]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+    Warning (15610): No output dependent on input pin "entradaSwitch[5]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+    Warning (15610): No output dependent on input pin "entradaSwitch[6]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+    Warning (15610): No output dependent on input pin "entradaSwitch[7]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+    Warning (15610): No output dependent on input pin "entradaSwitch[8]" File: /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/sistemaComputacional.v Line: 19
+Info (21057): Implemented 350 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 57 output pins
+    Info (21061): Implemented 281 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 85 warnings
+    Info: Peak virtual memory: 986 megabytes
+    Info: Processing ended: Fri Jun 30 12:52:49 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:28
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/output_files/sistemaComputacional.map.smsg.
+
+

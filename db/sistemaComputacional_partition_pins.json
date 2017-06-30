@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "saidaCentena[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCentena[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCentena[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCentena[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCentena[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCentena[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCentena[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezena[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezena[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezena[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezena[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezena[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezena[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezena[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaNegativo[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidade[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidade[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidade[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidade[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidade[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidade[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidade[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezenaOpcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezenaOpcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezenaOpcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezenaOpcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezenaOpcode[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaDezenaOpcode[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidadeOpcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidadeOpcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidadeOpcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidadeOpcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaUnidadeOpcode[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clock50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

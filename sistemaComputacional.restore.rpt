@@ -1,0 +1,115 @@
+Restore Archived Project report for sistemaComputacional
+Fri Jun 30 10:36:44 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri Jun 30 10:36:44 2017 ;
+; Revision Name                   ; sistemaComputacional                  ;
+; Top-level Entity Name           ; sistemaComputacional                  ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored '/home-local/aluno/92256/sistemaComputacional_versaoFinal.qar' into the '/home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/' directory
+Info: Generated report 'sistemaComputacional.restore.rpt'
+Info (23030): Evaluation of Tcl script /opt/intelFPGA/16.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1046 megabytes
+    Info: Processing ended: Fri Jun 30 10:36:44 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-----------------------------------------------------------------+
+; Files Restored                                                  ;
++-----------------------------------------------------------------+
+; File Name                                                       ;
++-----------------------------------------------------------------+
+; DeBounce.v                                                      ;
+; assignment_defaults.qdf                                         ;
+; bancoDeRegistradores.v                                          ;
+; bancoDeRegistradores.vwf                                        ;
+; binarioParaBCD.v                                                ;
+; binarioParaBCD.vwf                                              ;
+; binarioParaBCD2.v                                               ;
+; binarioParaBCD2.vwf                                             ;
+; contadorDePrograma.v                                            ;
+; contadorDePrograma.vwf                                          ;
+; entradaDeDadosSwitch.v                                          ;
+; entradaDeDadosSwitch.vwf                                        ;
+; extensor17.v                                                    ;
+; extensor22.v                                                    ;
+; extensor27.v                                                    ;
+; incremental_db/compiled_partitions/sistemaComputacional.db_info ;
+; memoriaDeDados.v                                                ;
+; memoriaDeDados.vwf                                              ;
+; memoriaDeInstrucoes.v                                           ;
+; memoriaDeInstrucoes.vwf                                         ;
+; mux.v                                                           ;
+; pc.vwf                                                          ;
+; quebraNumero.v                                                  ;
+; quebraNumero.vwf                                                ;
+; seteSegmentos.v                                                 ;
+; seteSegmentos.vwf                                               ;
+; seteSegmentosSinalNegativo.v                                    ;
+; sistemaComputacional.qpf                                        ;
+; sistemaComputacional.qsf                                        ;
+; sistemaComputacional.v                                          ;
+; sistemaComputacional.vwf                                        ;
+; sistemaComputacional_assignment_defaults.qdf                    ;
+; temporizador.v                                                  ;
+; teste.vwf                                                       ;
+; uC2.vwf                                                         ;
+; ucSaidaTeste.vwf                                                ;
+; ula.v                                                           ;
+; ula.vwf                                                         ;
+; ula2.vwf                                                        ;
+; unidadeDeControle.v                                             ;
+; unidadeDeControle.vwf                                           ;
++-----------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
