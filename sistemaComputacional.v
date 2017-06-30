@@ -7,10 +7,7 @@ module sistemaComputacional(clock50,
 									 saidaNegativo,
 									 saidaUnidade,
 									 saidaDezenaOpcode,
-									 saidaUnidadeOpcode,
-									 rs,
-									 rt,
-									 rd);
+									 saidaUnidadeOpcode);
 									 
 //Entradas
 	input clock50;
@@ -43,9 +40,9 @@ module sistemaComputacional(clock50,
 	wire		  selecionaEndEscrita;
 	wire [3:0] ulaControle;
 	wire [2:0] pcControle;
-	output [4:0] rs;
-	output [4:0] rt;
-	output [4:0] rd;
+	wire [4:0] rs;
+	wire [4:0] rt;
+	wire [4:0] rd;
 	wire [4:0] endEscrita;
 	wire [4:0] endEscritaNovo;
 	wire zero;
@@ -173,10 +170,10 @@ module sistemaComputacional(clock50,
 					.B(vaiPraULA),
 					.ulaSaida(ulaSaida));
 					
-	mux muxLoadR (.entrada1(dadoRs),
-							 .entrada2(imediatoExtendido22),
-							 .seletor(selecionaLoadR),
-							 .saida(enderecoLoad));
+	mux muxLoadR (.entrada1(imediatoExtendido2),
+					  .entrada2(dadoRs),
+					  .seletor(selecionaLoadR),
+					  .saida(enderecoLoad));
 	
 	memoriaDeDados memDados (.clock(clock),
 									 .enderecoLeitura(enderecoLoad),

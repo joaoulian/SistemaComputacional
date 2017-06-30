@@ -120,10 +120,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "saidaUnidadeOpcode[1]",
-					"strict" : false
-				},
-				{
 					"name" : "saidaUnidadeOpcode[2]",
 					"strict" : false
 				},
@@ -132,15 +128,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "saidaUnidadeOpcode[5]",
+					"strict" : false
+				},
+				{
 					"name" : "saidaUnidadeOpcode[6]",
-					"strict" : false
-				},
-				{
-					"name" : "rd[0]",
-					"strict" : false
-				},
-				{
-					"name" : "rd[1]",
 					"strict" : false
 				},
 				{

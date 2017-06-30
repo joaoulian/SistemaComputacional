@@ -16,13 +16,12 @@ module memoriaDeInstrucoes (endereco,
 		
 	always @ (posedge clock) begin
 		if (PrimeiroClock == 0) begin
-			memoriaDeInstrucoes[0] = {5'd17, 27'dx}; //nop
-			memoriaDeInstrucoes[1] = {5'd25, 5'd1, 22'd4}; //li $s0, 10
-			memoriaDeInstrucoes[2] = {5'd24, 5'd1, 22'd1}; //sw $s0, 1
-			memoriaDeInstrucoes[1] = {5'd25, 5'd2, 22'd1}; //li $s2, 1
-			memoriaDeInstrucoes[1] = {5'd23, 5'd3, 22'd1}; //lr $s3, $s2 -> $s3 <- mem[$s2]
-			memoriaDeInstrucoes[3] = {5'd20, 5'd3, 22'dx}; //out $s3
-			memoriaDeInstrucoes[4] = {5'd18, 27'dx}; //hlt
+			memoriaDeInstrucoes[1] = {5'd25, 5'd4, 22'd1}; //li $s0, 10
+			memoriaDeInstrucoes[2] = {5'd25, 5'd1, 22'd4}; //li $s0, 10
+			memoriaDeInstrucoes[3] = {5'd24, 5'd1, 22'd1}; //li $s0, 10
+			memoriaDeInstrucoes[4] = {5'd26, 5'd2, 5'd4, 17'd1}; //out $s3
+			memoriaDeInstrucoes[5] = {5'd20, 5'd2, 22'dx}; //out $s3
+			memoriaDeInstrucoes[6] = {5'd18, 27'dx}; //hlt
 			PrimeiroClock <= 1;
 		end
 	end

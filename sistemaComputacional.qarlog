@@ -1,0 +1,52 @@
+Quartus Prime Archive log --	/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qarlog
+
+Archive:	/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qar
+Date:		Fri Jun 30 14:16:52 2017
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home-local/aluno/92256/SistemaComputacional/DeBounce.v
+/home-local/aluno/92256/SistemaComputacional/Waveform.vwf
+/home-local/aluno/92256/SistemaComputacional/assignment_defaults.qdf
+/home-local/aluno/92256/SistemaComputacional/bancoDeRegistradores.v
+/home-local/aluno/92256/SistemaComputacional/bancoDeRegistradores.vwf
+/home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v
+/home-local/aluno/92256/SistemaComputacional/binarioParaBCD.vwf
+/home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.v
+/home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.vwf
+/home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v
+/home-local/aluno/92256/SistemaComputacional/contadorDePrograma.vwf
+/home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v
+/home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.vwf
+/home-local/aluno/92256/SistemaComputacional/extensor17.v
+/home-local/aluno/92256/SistemaComputacional/extensor22.v
+/home-local/aluno/92256/SistemaComputacional/extensor27.v
+/home-local/aluno/92256/SistemaComputacional/memoriaDeDados.v
+/home-local/aluno/92256/SistemaComputacional/memoriaDeDados.vwf
+/home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.v
+/home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.vwf
+/home-local/aluno/92256/SistemaComputacional/mux.v
+/home-local/aluno/92256/SistemaComputacional/pc.vwf
+/home-local/aluno/92256/SistemaComputacional/quebraNumero.v
+/home-local/aluno/92256/SistemaComputacional/quebraNumero.vwf
+/home-local/aluno/92256/SistemaComputacional/seteSegmentos.v
+/home-local/aluno/92256/SistemaComputacional/seteSegmentos.vwf
+/home-local/aluno/92256/SistemaComputacional/seteSegmentosSinalNegativo.v
+/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qpf
+/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qsf
+/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v
+/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.vwf
+/home-local/aluno/92256/SistemaComputacional/sistemaComputacional_assignment_defaults.qdf
+/home-local/aluno/92256/SistemaComputacional/temporizador.v
+/home-local/aluno/92256/SistemaComputacional/teste.vwf
+/home-local/aluno/92256/SistemaComputacional/uC2.vwf
+/home-local/aluno/92256/SistemaComputacional/ucSaidaTeste.vwf
+/home-local/aluno/92256/SistemaComputacional/ula.v
+/home-local/aluno/92256/SistemaComputacional/ula.vwf
+/home-local/aluno/92256/SistemaComputacional/ula2.vwf
+/home-local/aluno/92256/SistemaComputacional/unidadeDeControle.v
+/home-local/aluno/92256/SistemaComputacional/unidadeDeControle.vwf
+	======= Total: 41 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
