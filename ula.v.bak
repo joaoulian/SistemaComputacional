@@ -21,10 +21,6 @@ module ula(ulaControle,
 				5: ulaSaida <= A >> 1; //sr
 				6: ulaSaida <= A << 1; //sl
 				7: ulaSaida <= A < B ? 1 : 0; //slt e slti
-				8: ulaSaida <= A == B ? 1 : 0; //eq
-				9: ulaSaida <= A > B ? 1 : 0; //smt
-				10: ulaSaida <= A <= B ? 1 : 0; //slteq
-				11: ulaSaida <= A >= B ? 1 : 0; //smteq
 				default: ulaSaida <= 0;
 			endcase
 			

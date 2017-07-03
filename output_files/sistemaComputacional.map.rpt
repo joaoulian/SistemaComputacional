@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sistemaComputacional
-Fri Jun 30 14:07:06 2017
+Mon Jul  3 15:17:10 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -20,14 +20,13 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: temporizador:t
  14. Port Connectivity Checks: "quebraNumero:q1|binarioParaBCD:binarioParaBCD1"
- 15. Port Connectivity Checks: "mux:muxLoadR"
- 16. Port Connectivity Checks: "mux:multiplexador5"
- 17. Port Connectivity Checks: "mux:multiplexador0"
- 18. Port Connectivity Checks: "contadorDePrograma:PC"
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+ 15. Port Connectivity Checks: "mux:multiplexador5"
+ 16. Port Connectivity Checks: "mux:multiplexador0"
+ 17. Port Connectivity Checks: "contadorDePrograma:PC"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+ 21. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -54,15 +53,15 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 30 14:07:06 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul  3 15:17:10 2017           ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
 ; Revision Name                      ; sistemaComputacional                            ;
 ; Top-level Entity Name              ; sistemaComputacional                            ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 2,279                                           ;
-;     Total combinational functions  ; 1,223                                           ;
-;     Dedicated logic registers      ; 1,129                                           ;
-; Total registers                    ; 1129                                            ;
+; Total logic elements               ; 2,462                                           ;
+;     Total combinational functions  ; 1,374                                           ;
+;     Dedicated logic registers      ; 1,161                                           ;
+; Total registers                    ; 1161                                            ;
 ; Total pins                         ; 54                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -176,30 +175,30 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; bancoDeRegistradores.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/bancoDeRegistradores.v       ;         ;
-; ula.v                            ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/ula.v                        ;         ;
-; extensor17.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/extensor17.v                 ;         ;
-; contadorDePrograma.v             ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v         ;         ;
-; memoriaDeInstrucoes.v            ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.v        ;         ;
-; memoriaDeDados.v                 ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/memoriaDeDados.v             ;         ;
-; entradaDeDadosSwitch.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v       ;         ;
-; binarioParaBCD.v                 ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v             ;         ;
-; quebraNumero.v                   ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/quebraNumero.v               ;         ;
-; extensor27.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/extensor27.v                 ;         ;
-; unidadeDeControle.v              ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/unidadeDeControle.v          ;         ;
-; sistemaComputacional.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v       ;         ;
-; mux.v                            ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/mux.v                        ;         ;
-; seteSegmentos.v                  ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/seteSegmentos.v              ;         ;
-; seteSegmentosSinalNegativo.v     ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/seteSegmentosSinalNegativo.v ;         ;
-; extensor22.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/extensor22.v                 ;         ;
-; binarioParaBCD2.v                ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.v            ;         ;
-; temporizador.v                   ; yes             ; User Verilog HDL File  ; /home-local/aluno/92256/SistemaComputacional/temporizador.v               ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
+; bancoDeRegistradores.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/bancoDeRegistradores.v       ;         ;
+; ula.v                            ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/ula.v                        ;         ;
+; extensor17.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/extensor17.v                 ;         ;
+; contadorDePrograma.v             ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/contadorDePrograma.v         ;         ;
+; memoriaDeInstrucoes.v            ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v        ;         ;
+; memoriaDeDados.v                 ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/memoriaDeDados.v             ;         ;
+; entradaDeDadosSwitch.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v       ;         ;
+; binarioParaBCD.v                 ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/binarioParaBCD.v             ;         ;
+; quebraNumero.v                   ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/quebraNumero.v               ;         ;
+; extensor27.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/extensor27.v                 ;         ;
+; unidadeDeControle.v              ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/unidadeDeControle.v          ;         ;
+; sistemaComputacional.v           ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/sistemaComputacional.v       ;         ;
+; mux.v                            ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/mux.v                        ;         ;
+; seteSegmentos.v                  ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/seteSegmentos.v              ;         ;
+; seteSegmentosSinalNegativo.v     ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/seteSegmentosSinalNegativo.v ;         ;
+; extensor22.v                     ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/extensor22.v                 ;         ;
+; binarioParaBCD2.v                ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/binarioParaBCD2.v            ;         ;
+; temporizador.v                   ; yes             ; User Verilog HDL File  ; /home-local/aluno/SistemaComputacional/temporizador.v               ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------+
@@ -207,20 +206,20 @@ agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 2,279                   ;
+; Estimated Total logic elements              ; 2,462                   ;
 ;                                             ;                         ;
-; Total combinational functions               ; 1223                    ;
+; Total combinational functions               ; 1374                    ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 1022                    ;
-;     -- 3 input functions                    ; 167                     ;
-;     -- <=2 input functions                  ; 34                      ;
+;     -- 4 input functions                    ; 1095                    ;
+;     -- 3 input functions                    ; 233                     ;
+;     -- <=2 input functions                  ; 46                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 1147                    ;
-;     -- arithmetic mode                      ; 76                      ;
+;     -- normal mode                          ; 1267                    ;
+;     -- arithmetic mode                      ; 107                     ;
 ;                                             ;                         ;
-; Total registers                             ; 1129                    ;
-;     -- Dedicated logic registers            ; 1129                    ;
+; Total registers                             ; 1161                    ;
+;     -- Dedicated logic registers            ; 1161                    ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
 ; I/O pins                                    ; 54                      ;
@@ -228,8 +227,8 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ;                                             ;                         ;
 ; Maximum fan-out node                        ; temporizador:t|count[2] ;
-; Maximum fan-out                             ; 1127                    ;
-; Total fan-out                               ; 8134                    ;
+; Maximum fan-out                             ; 1159                    ;
+; Total fan-out                               ; 8745                    ;
 ; Average fan-out                             ; 3.31                    ;
 +---------------------------------------------+-------------------------+
 
@@ -239,25 +238,24 @@ agreement for further details.
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name          ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
-; |sistemaComputacional                  ; 1223 (0)            ; 1129 (0)                  ; 0           ; 0            ; 0       ; 0         ; 54   ; 0            ; |sistemaComputacional                                                ; sistemaComputacional ; work         ;
-;    |bancoDeRegistradores:br1|          ; 104 (104)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|bancoDeRegistradores:br1                       ; bancoDeRegistradores ; work         ;
+; |sistemaComputacional                  ; 1374 (0)            ; 1161 (0)                  ; 0           ; 0            ; 0       ; 0         ; 54   ; 0            ; |sistemaComputacional                                                ; sistemaComputacional ; work         ;
+;    |bancoDeRegistradores:br1|          ; 198 (198)           ; 160 (160)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|bancoDeRegistradores:br1                       ; bancoDeRegistradores ; work         ;
 ;    |binarioParaBCD2:bOp1|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|binarioParaBCD2:bOp1                           ; binarioParaBCD2      ; work         ;
-;    |contadorDePrograma:PC|             ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|contadorDePrograma:PC                          ; contadorDePrograma   ; work         ;
+;    |contadorDePrograma:PC|             ; 15 (15)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|contadorDePrograma:PC                          ; contadorDePrograma   ; work         ;
 ;    |memoriaDeDados:memDados|           ; 695 (695)           ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|memoriaDeDados:memDados                        ; memoriaDeDados       ; work         ;
-;    |memoriaDeInstrucoes:M1|            ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|memoriaDeInstrucoes:M1                         ; memoriaDeInstrucoes  ; work         ;
-;    |mux:multiplexador1|                ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|mux:multiplexador1                             ; mux                  ; work         ;
-;    |mux:multiplexador8|                ; 157 (157)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|mux:multiplexador8                             ; mux                  ; work         ;
+;    |memoriaDeInstrucoes:M1|            ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|memoriaDeInstrucoes:M1                         ; memoriaDeInstrucoes  ; work         ;
+;    |mux:multiplexador8|                ; 192 (192)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|mux:multiplexador8                             ; mux                  ; work         ;
 ;    |mux:muxLoadR|                      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|mux:muxLoadR                                   ; mux                  ; work         ;
-;    |quebraNumero:q1|                   ; 92 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|quebraNumero:q1                                ; quebraNumero         ; work         ;
-;       |binarioParaBCD:binarioParaBCD1| ; 71 (71)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|quebraNumero:q1|binarioParaBCD:binarioParaBCD1 ; binarioParaBCD       ; work         ;
+;    |quebraNumero:q1|                   ; 94 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|quebraNumero:q1                                ; quebraNumero         ; work         ;
+;       |binarioParaBCD:binarioParaBCD1| ; 73 (73)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|quebraNumero:q1|binarioParaBCD:binarioParaBCD1 ; binarioParaBCD       ; work         ;
 ;    |seteSegmentos:c1|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:c1                               ; seteSegmentos        ; work         ;
 ;    |seteSegmentos:d1|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:d1                               ; seteSegmentos        ; work         ;
 ;    |seteSegmentos:d2|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:d2                               ; seteSegmentos        ; work         ;
 ;    |seteSegmentos:u1|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:u1                               ; seteSegmentos        ; work         ;
-;    |seteSegmentos:u2|                  ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:u2                               ; seteSegmentos        ; work         ;
+;    |seteSegmentos:u2|                  ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|seteSegmentos:u2                               ; seteSegmentos        ; work         ;
 ;    |temporizador:t|                    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|temporizador:t                                 ; temporizador         ; work         ;
-;    |ula:cpuULA|                        ; 67 (67)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|ula:cpuULA                                     ; ula                  ; work         ;
-;    |unidadeDeControle:uc|              ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|unidadeDeControle:uc                           ; unidadeDeControle    ; work         ;
+;    |ula:cpuULA|                        ; 98 (98)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|ula:cpuULA                                     ; ula                  ; work         ;
+;    |unidadeDeControle:uc|              ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sistemaComputacional|unidadeDeControle:uc                           ; unidadeDeControle    ; work         ;
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -267,18 +265,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------+-----------------------------+------------------------+
 ; Latch Name                                                ; Latch Enable Signal         ; Free of Timing Hazards ;
 +-----------------------------------------------------------+-----------------------------+------------------------+
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[0] ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[1] ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[2] ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[3] ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[0]  ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[1]  ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[2]  ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[3]  ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[0] ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[1] ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[2] ; unidadeDeControle:uc|Equal5 ; yes                    ;
-; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[3] ; unidadeDeControle:uc|Equal5 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[0] ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[1] ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[2] ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[3] ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[0]  ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[1]  ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[2]  ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|dezena[3]  ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[0] ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[1] ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[2] ; unidadeDeControle:uc|Equal7 ; yes                    ;
+; quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[3] ; unidadeDeControle:uc|Equal7 ; yes                    ;
 ; Number of user-specified and inferred latches = 12        ;                             ;                        ;
 +-----------------------------------------------------------+-----------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -289,13 +287,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------------------------+---------------------------------------------+
 ; Register name                                     ; Reason for Removal                          ;
 +---------------------------------------------------+---------------------------------------------+
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][3]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][2]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][1]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][0]  ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|PrimeiroClock[1..31]       ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][4]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][5]  ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][0]  ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][1]  ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][2]  ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][3]  ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][4]  ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][5]  ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][6]  ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][7]  ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][8]  ; Stuck at GND due to stuck port data_in      ;
@@ -323,9 +321,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][30] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][31] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][0]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][1]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][2]  ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][3]  ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][1]  ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][2]  ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][3]  ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][4]  ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][5]  ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][6]  ; Stuck at GND due to stuck port data_in      ;
@@ -344,8 +342,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][19] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][20] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][21] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][22] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][23] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][22] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][23] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][24] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][25] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][26] ; Stuck at GND due to stuck port data_in      ;
@@ -354,85 +352,71 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][29] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][30] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[2][31] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][0]  ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][1]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][2]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][3]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][4]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][5]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][6]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][7]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][8]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][9]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][10] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][11] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][12] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][13] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][14] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][12] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][13] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][14] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][15] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][16] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][17] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][18] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][18] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][19] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][20] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][21] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][22] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][22] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][23] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][24] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][24] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][25] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][26] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][27] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][27] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][28] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][29] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][30] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][31] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][0]  ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][1]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][2]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][3]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][4]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][5]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][6]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][7]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][8]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][9]  ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][10] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][11] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][12] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][13] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][14] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][15] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][16] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][30] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[3][31] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][17] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][18] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][19] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][20] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][21] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][22] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][22] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][23] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][24] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][24] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][25] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][26] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][27] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][27] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][28] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][29] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][29] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][30] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][31] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][22] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[4][31] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][17] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][18] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][19] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][20] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][21] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][22] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][23] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][24] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][25] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][26] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][27] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][28] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][29] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][30] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][28] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][29] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][30] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[5][31] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][22] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][23] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][24] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][25] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][26] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][27] ; Stuck at GND due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][28] ; Stuck at VCC due to stuck port data_in      ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][29] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][28] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][29] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][30] ; Stuck at GND due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[6][31] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[7][27] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[7][28] ; Stuck at VCC due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[7][29] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[7][30] ; Stuck at GND due to stuck port data_in      ;
+; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[7][31] ; Stuck at VCC due to stuck port data_in      ;
 ; memoriaDeInstrucoes:M1|PrimeiroClock[0]           ; Lost fanout                                 ;
 ; contadorDePrograma:PC|primeiroClock[1..31]        ; Stuck at GND due to stuck port data_in      ;
 ; bancoDeRegistradores:br1|estagioEntradaBanco      ; Stuck at GND due to stuck port data_in      ;
@@ -1205,148 +1189,158 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoDeRegistradores:br1|banco~1022               ; Lost fanout                                 ;
 ; bancoDeRegistradores:br1|banco~1023               ; Lost fanout                                 ;
 ; contadorDePrograma:PC|pc[5..31]                   ; Lost fanout                                 ;
-; bancoDeRegistradores:br1|banco~127                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~191                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~223                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~255                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~102                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~166                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~198                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~230                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~101                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~165                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~197                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~229                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~100                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~164                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~196                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~228                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~99                 ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~163                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~195                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~227                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~98                 ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~162                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~194                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~226                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~97                 ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~161                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~193                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~225                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~96                 ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~160                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~192                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~224                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~103                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~167                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~199                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~231                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~104                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~168                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~200                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~232                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~105                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~169                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~201                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~233                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~106                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~170                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~202                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~234                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~126                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~169                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~168                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~167                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~166                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~165                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~164                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~163                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~162                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~161                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~160                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~190                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~222                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~254                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~125                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~189                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~221                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~253                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~124                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~188                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~220                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~252                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~123                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~187                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~219                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~251                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~122                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~186                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~218                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~250                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~121                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~185                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~217                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~249                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~120                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~184                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~216                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~248                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~119                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~183                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~215                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~247                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~118                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~182                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~214                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~246                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~117                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~181                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~213                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~245                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~116                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~180                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~212                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~244                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~115                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~179                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~211                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~243                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~114                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~178                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~210                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~242                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~113                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~177                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~209                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~241                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~112                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~176                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~208                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~240                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~111                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~175                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~207                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~239                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~110                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~174                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~206                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~238                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~109                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~173                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~205                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~237                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~108                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~172                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~204                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~236                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~107                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~171                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~223                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~202                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~201                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~200                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~199                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~198                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~197                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~196                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~195                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~194                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~193                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~192                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~222                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~221                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~220                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~219                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~218                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~217                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~216                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~215                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~214                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~213                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~212                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~211                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~210                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~209                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~208                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~207                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~206                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~205                ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~204                ; Stuck at GND due to stuck port clock_enable ;
 ; bancoDeRegistradores:br1|banco~203                ; Stuck at GND due to stuck port clock_enable ;
-; bancoDeRegistradores:br1|banco~235                ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 1130          ;                                             ;
+; bancoDeRegistradores:br1|banco~63                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~42                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~41                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~40                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~39                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~38                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~37                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~36                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~35                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~34                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~33                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~32                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~62                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~61                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~60                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~59                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~58                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~57                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~56                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~55                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~54                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~53                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~52                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~51                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~50                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~49                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~48                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~47                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~46                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~45                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~44                 ; Stuck at GND due to stuck port clock_enable ;
+; bancoDeRegistradores:br1|banco~43                 ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 1084          ;                                             ;
 +---------------------------------------------------+---------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                  ;
-+---------------------------------------------------+--------------------------------+-------------------------------------------------------------------------+
-; Register name                                     ; Reason for Removal             ; Registers Removed due to This Register                                  ;
-+---------------------------------------------------+--------------------------------+-------------------------------------------------------------------------+
-; bancoDeRegistradores:br1|banco~127                ; Stuck at GND                   ; bancoDeRegistradores:br1|banco~126, bancoDeRegistradores:br1|banco~190, ;
-;                                                   ; due to stuck port clock_enable ; bancoDeRegistradores:br1|banco~222, bancoDeRegistradores:br1|banco~254  ;
-; memoriaDeInstrucoes:M1|memoriaDeInstrucoes[1][27] ; Stuck at VCC                   ; bancoDeRegistradores:br1|estagioEntradaBanco                            ;
-;                                                   ; due to stuck port data_in      ;                                                                         ;
-+---------------------------------------------------+--------------------------------+-------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                   ;
++------------------------------------+--------------------------------+-------------------------------------------------------------------------+
+; Register name                      ; Reason for Removal             ; Registers Removed due to This Register                                  ;
++------------------------------------+--------------------------------+-------------------------------------------------------------------------+
+; bancoDeRegistradores:br1|banco~194 ; Stuck at GND                   ; bancoDeRegistradores:br1|banco~222, bancoDeRegistradores:br1|banco~221, ;
+;                                    ; due to stuck port clock_enable ; bancoDeRegistradores:br1|banco~220, bancoDeRegistradores:br1|banco~219, ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~218, bancoDeRegistradores:br1|banco~217, ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~216, bancoDeRegistradores:br1|banco~215, ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~214, bancoDeRegistradores:br1|banco~213, ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~212, bancoDeRegistradores:br1|banco~211, ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~210, bancoDeRegistradores:br1|banco~209, ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~208, bancoDeRegistradores:br1|banco~207, ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~206, bancoDeRegistradores:br1|banco~205, ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~204, bancoDeRegistradores:br1|banco~63,  ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~40, bancoDeRegistradores:br1|banco~38,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~37, bancoDeRegistradores:br1|banco~36,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~62, bancoDeRegistradores:br1|banco~61,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~60, bancoDeRegistradores:br1|banco~59,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~58, bancoDeRegistradores:br1|banco~57,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~56, bancoDeRegistradores:br1|banco~55,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~54, bancoDeRegistradores:br1|banco~53,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~52, bancoDeRegistradores:br1|banco~51,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~50, bancoDeRegistradores:br1|banco~49,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~48, bancoDeRegistradores:br1|banco~47,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~46, bancoDeRegistradores:br1|banco~45,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~44                                       ;
+; contadorDePrograma:PC|pc[31]       ; Lost Fanouts                   ; contadorDePrograma:PC|pc[30], contadorDePrograma:PC|pc[29],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[28], contadorDePrograma:PC|pc[27],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[26], contadorDePrograma:PC|pc[25],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[24], contadorDePrograma:PC|pc[23],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[22], contadorDePrograma:PC|pc[21],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[20], contadorDePrograma:PC|pc[19],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[18], contadorDePrograma:PC|pc[17],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[16], contadorDePrograma:PC|pc[15],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[14], contadorDePrograma:PC|pc[13],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[12], contadorDePrograma:PC|pc[11],             ;
+;                                    ;                                ; contadorDePrograma:PC|pc[10], contadorDePrograma:PC|pc[9],              ;
+;                                    ;                                ; contadorDePrograma:PC|pc[8], contadorDePrograma:PC|pc[7],               ;
+;                                    ;                                ; contadorDePrograma:PC|pc[6], contadorDePrograma:PC|pc[5]                ;
+; bancoDeRegistradores:br1|banco~202 ; Stuck at GND                   ; bancoDeRegistradores:br1|banco~192, bancoDeRegistradores:br1|banco~203, ;
+;                                    ; due to stuck port clock_enable ; bancoDeRegistradores:br1|banco~35, bancoDeRegistradores:br1|banco~32,   ;
+;                                    ;                                ; bancoDeRegistradores:br1|banco~43                                       ;
+; bancoDeRegistradores:br1|banco~160 ; Stuck at GND                   ; bancoDeRegistradores:br1|banco~193, bancoDeRegistradores:br1|banco~34,  ;
+;                                    ; due to stuck port clock_enable ; bancoDeRegistradores:br1|banco~33                                       ;
+; bancoDeRegistradores:br1|banco~201 ; Stuck at GND                   ; bancoDeRegistradores:br1|banco~42                                       ;
+;                                    ; due to stuck port clock_enable ;                                                                         ;
+; bancoDeRegistradores:br1|banco~200 ; Stuck at GND                   ; bancoDeRegistradores:br1|banco~41                                       ;
+;                                    ; due to stuck port clock_enable ;                                                                         ;
+; bancoDeRegistradores:br1|banco~198 ; Stuck at GND                   ; bancoDeRegistradores:br1|banco~39                                       ;
+;                                    ; due to stuck port clock_enable ;                                                                         ;
++------------------------------------+--------------------------------+-------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1354,12 +1348,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1129  ;
+; Total registers                              ; 1161  ;
 ; Number of registers using Synchronous Clear  ; 5     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1125  ;
+; Number of registers using Clock Enable       ; 1157  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1369,14 +1363,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; 9:1                ; 5 bits    ; 30 LEs        ; 5 LEs                ; 25 LEs                 ; Yes        ; |sistemaComputacional|contadorDePrograma:PC|pc[31]       ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |sistemaComputacional|contadorDePrograma:PC|pc[31]       ;
 ; 9:1                ; 10 bits   ; 60 LEs        ; 20 LEs               ; 40 LEs                 ; Yes        ; |sistemaComputacional|contadorDePrograma:PC|pc[18]       ;
 ; 9:1                ; 17 bits   ; 102 LEs       ; 34 LEs               ; 68 LEs                 ; Yes        ; |sistemaComputacional|contadorDePrograma:PC|pc[0]        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sistemaComputacional|unidadeDeControle:uc|pcControle[2] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |sistemaComputacional|mux:multiplexador5|saida[0]        ;
-; 15:1               ; 9 bits    ; 90 LEs        ; 54 LEs               ; 36 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[28]       ;
-; 15:1               ; 13 bits   ; 130 LEs       ; 91 LEs               ; 39 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[18]       ;
-; 15:1               ; 8 bits    ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[8]        ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |sistemaComputacional|mux:multiplexador5|saida[4]        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sistemaComputacional|unidadeDeControle:uc|pcControle[0] ;
+; 15:1               ; 5 bits    ; 50 LEs        ; 30 LEs               ; 20 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[26]       ;
+; 15:1               ; 6 bits    ; 60 LEs        ; 42 LEs               ; 18 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[10]       ;
+; 15:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[6]        ;
+; 15:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[25]       ;
+; 15:1               ; 7 bits    ; 70 LEs        ; 49 LEs               ; 21 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[11]       ;
+; 15:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; No         ; |sistemaComputacional|mux:multiplexador8|saida[7]        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
@@ -1397,15 +1394,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; binario ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 +---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux:muxLoadR"                                                                                                                                         ;
-+----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                                                                                            ;
-+----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; entrada1 ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "entrada1[31..1]" will be connected to GND. ;
-+----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1445,23 +1433,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 54                          ;
-; cycloneiii_ff         ; 1129                        ;
-;     ENA               ; 1120                        ;
+; cycloneiii_ff         ; 1161                        ;
+;     ENA               ; 1152                        ;
 ;     ENA CLR SCLR      ; 5                           ;
 ;     plain             ; 4                           ;
-; cycloneiii_lcell_comb ; 1232                        ;
-;     arith             ; 76                          ;
+; cycloneiii_lcell_comb ; 1383                        ;
+;     arith             ; 107                         ;
 ;         2 data inputs ; 14                          ;
-;         3 data inputs ; 62                          ;
-;     normal            ; 1156                        ;
+;         3 data inputs ; 93                          ;
+;     normal            ; 1276                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 105                         ;
-;         4 data inputs ; 1022                        ;
+;         2 data inputs ; 29                          ;
+;         3 data inputs ; 140                         ;
+;         4 data inputs ; 1095                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 16.00                       ;
-; Average LUT depth     ; 7.33                        ;
+; Max LUT depth         ; 17.00                       ;
+; Average LUT depth     ; 8.71                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1470,7 +1458,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1480,204 +1468,206 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
-    Info: Processing started: Fri Jun 30 14:06:36 2017
+    Info: Processing started: Mon Jul  3 15:16:42 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sistemaComputacional -c sistemaComputacional
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file bancoDeRegistradores.v
-    Info (12023): Found entity 1: bancoDeRegistradores File: /home-local/aluno/92256/SistemaComputacional/bancoDeRegistradores.v Line: 1
+    Info (12023): Found entity 1: bancoDeRegistradores File: /home-local/aluno/SistemaComputacional/bancoDeRegistradores.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ula.v
-    Info (12023): Found entity 1: ula File: /home-local/aluno/92256/SistemaComputacional/ula.v Line: 1
+    Info (12023): Found entity 1: ula File: /home-local/aluno/SistemaComputacional/ula.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extensor17.v
-    Info (12023): Found entity 1: extensor17 File: /home-local/aluno/92256/SistemaComputacional/extensor17.v Line: 1
+    Info (12023): Found entity 1: extensor17 File: /home-local/aluno/SistemaComputacional/extensor17.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadorDePrograma.v
-    Info (12023): Found entity 1: contadorDePrograma File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 1
+    Info (12023): Found entity 1: contadorDePrograma File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memoriaDeInstrucoes.v
-    Info (12023): Found entity 1: memoriaDeInstrucoes File: /home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.v Line: 1
+    Info (12023): Found entity 1: memoriaDeInstrucoes File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memoriaDeDados.v
-    Info (12023): Found entity 1: memoriaDeDados File: /home-local/aluno/92256/SistemaComputacional/memoriaDeDados.v Line: 1
+    Info (12023): Found entity 1: memoriaDeDados File: /home-local/aluno/SistemaComputacional/memoriaDeDados.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file entradaDeDadosSwitch.v
-    Info (12023): Found entity 1: entradaDeDadosSwitch File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 1
+    Info (12023): Found entity 1: entradaDeDadosSwitch File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file binarioParaBCD.v
-    Info (12023): Found entity 1: binarioParaBCD File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 1
+    Info (12023): Found entity 1: binarioParaBCD File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file quebraNumero.v
-    Info (12023): Found entity 1: quebraNumero File: /home-local/aluno/92256/SistemaComputacional/quebraNumero.v Line: 1
+    Info (12023): Found entity 1: quebraNumero File: /home-local/aluno/SistemaComputacional/quebraNumero.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extensor27.v
-    Info (12023): Found entity 1: extensor27 File: /home-local/aluno/92256/SistemaComputacional/extensor27.v Line: 1
+    Info (12023): Found entity 1: extensor27 File: /home-local/aluno/SistemaComputacional/extensor27.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file unidadeDeControle.v
-    Info (12023): Found entity 1: unidadeDeControle File: /home-local/aluno/92256/SistemaComputacional/unidadeDeControle.v Line: 1
+    Info (12023): Found entity 1: unidadeDeControle File: /home-local/aluno/SistemaComputacional/unidadeDeControle.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sistemaComputacional.v
-    Info (12023): Found entity 1: sistemaComputacional File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 1
-Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus Prime megafunction library File: /home-local/aluno/92256/SistemaComputacional/mux.v Line: 1
+    Info (12023): Found entity 1: sistemaComputacional File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 1
+Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus Prime megafunction library File: /home-local/aluno/SistemaComputacional/mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux.v
-    Info (12023): Found entity 1: mux File: /home-local/aluno/92256/SistemaComputacional/mux.v Line: 1
+    Info (12023): Found entity 1: mux File: /home-local/aluno/SistemaComputacional/mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file seteSegmentos.v
-    Info (12023): Found entity 1: seteSegmentos File: /home-local/aluno/92256/SistemaComputacional/seteSegmentos.v Line: 1
+    Info (12023): Found entity 1: seteSegmentos File: /home-local/aluno/SistemaComputacional/seteSegmentos.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file seteSegmentosSinalNegativo.v
-    Info (12023): Found entity 1: seteSegmentosSinalNegativo File: /home-local/aluno/92256/SistemaComputacional/seteSegmentosSinalNegativo.v Line: 1
+    Info (12023): Found entity 1: seteSegmentosSinalNegativo File: /home-local/aluno/SistemaComputacional/seteSegmentosSinalNegativo.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extensor22.v
-    Info (12023): Found entity 1: extensor22 File: /home-local/aluno/92256/SistemaComputacional/extensor22.v Line: 1
+    Info (12023): Found entity 1: extensor22 File: /home-local/aluno/SistemaComputacional/extensor22.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file binarioParaBCD2.v
-    Info (12023): Found entity 1: binarioParaBCD2 File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.v Line: 1
+    Info (12023): Found entity 1: binarioParaBCD2 File: /home-local/aluno/SistemaComputacional/binarioParaBCD2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file temporizador.v
-    Info (12023): Found entity 1: temporizador File: /home-local/aluno/92256/SistemaComputacional/temporizador.v Line: 1
+    Info (12023): Found entity 1: temporizador File: /home-local/aluno/SistemaComputacional/temporizador.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file DeBounce.v
-    Info (12023): Found entity 1: DeBounce File: /home-local/aluno/92256/SistemaComputacional/DeBounce.v Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at sistemaComputacional.v(173): created implicit net for "imediatoExtendido2" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 173
+    Info (12023): Found entity 1: DeBounce File: /home-local/aluno/SistemaComputacional/DeBounce.v Line: 2
 Info (12127): Elaborating entity "sistemaComputacional" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at sistemaComputacional.v(122): truncated value with size 32 to match size of target (1) File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 122
-Info (12128): Elaborating entity "temporizador" for hierarchy "temporizador:t" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 79
-Warning (10230): Verilog HDL assignment warning at temporizador.v(11): truncated value with size 32 to match size of target (3) File: /home-local/aluno/92256/SistemaComputacional/temporizador.v Line: 11
-Info (12128): Elaborating entity "contadorDePrograma" for hierarchy "contadorDePrograma:PC" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 86
-Info (12128): Elaborating entity "extensor27" for hierarchy "contadorDePrograma:PC|extensor27:extendeJump" File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 20
-Info (12128): Elaborating entity "extensor17" for hierarchy "contadorDePrograma:PC|extensor17:extendeBranch" File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 23
-Info (12128): Elaborating entity "memoriaDeInstrucoes" for hierarchy "memoriaDeInstrucoes:M1" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 90
-Warning (10030): Net "memoriaDeInstrucoes[6][26..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
-Warning (10030): Net "memoriaDeInstrucoes[20..7]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
-Warning (10030): Net "memoriaDeInstrucoes[5][21..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
-Warning (10030): Net "memoriaDeInstrucoes[0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
-Info (12128): Elaborating entity "unidadeDeControle" for hierarchy "unidadeDeControle:uc" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 110
-Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(109): variable "zero" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/unidadeDeControle.v Line: 109
-Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(111): variable "estagioEntradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/unidadeDeControle.v Line: 111
-Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(111): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/unidadeDeControle.v Line: 111
-Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(117): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/unidadeDeControle.v Line: 117
-Info (12128): Elaborating entity "extensor22" for hierarchy "extensor22:imediatoExtensor22" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 116
-Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexador0" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 127
-Info (12128): Elaborating entity "entradaDeDadosSwitch" for hierarchy "entradaDeDadosSwitch:e1" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 134
-Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(21): variable "estagioEntradaUC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 21
-Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(22): variable "entradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 22
-Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(23): variable "entradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 23
-Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(25): variable "estagioEntradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 25
-Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(26): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 26
-Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(27): variable "estagioEntradaUC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 27
-Warning (10240): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(19): inferring latch(es) for variable "dado", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[0]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[1]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[2]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[3]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[4]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[5]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[6]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[7]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[8]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[9]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[10]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[11]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[12]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[13]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[14]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[15]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[16]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[17]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[18]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[19]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[20]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[21]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[22]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[23]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[24]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[25]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[26]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[27]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[28]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[29]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[30]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (10041): Inferred latch for "dado[31]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Info (12128): Elaborating entity "bancoDeRegistradores" for hierarchy "bancoDeRegistradores:br1" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 161
-Info (12128): Elaborating entity "ula" for hierarchy "ula:cpuULA" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 171
-Info (12128): Elaborating entity "memoriaDeDados" for hierarchy "memoriaDeDados:memDados" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 183
-Info (12128): Elaborating entity "quebraNumero" for hierarchy "quebraNumero:q1" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 196
-Info (12128): Elaborating entity "binarioParaBCD" for hierarchy "quebraNumero:q1|binarioParaBCD:binarioParaBCD1" File: /home-local/aluno/92256/SistemaComputacional/quebraNumero.v Line: 34
-Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(34): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 34
-Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(36): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 36
-Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(38): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 38
-Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "centena", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "dezena", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "unidade", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "deslocado", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "unidade[0]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "unidade[1]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "unidade[2]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "unidade[3]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "dezena[0]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "dezena[1]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "dezena[2]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "dezena[3]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "centena[0]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "centena[1]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "centena[2]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (10041): Inferred latch for "centena[3]" at binarioParaBCD.v(24) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-Info (12128): Elaborating entity "binarioParaBCD2" for hierarchy "binarioParaBCD2:bOp1" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 200
-Warning (10036): Verilog HDL or VHDL warning at binarioParaBCD2.v(9): object "centena" assigned a value but never read File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.v Line: 9
-Warning (10230): Verilog HDL assignment warning at binarioParaBCD2.v(24): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.v Line: 24
-Warning (10230): Verilog HDL assignment warning at binarioParaBCD2.v(26): truncated value with size 32 to match size of target (4) File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.v Line: 26
-Info (12128): Elaborating entity "seteSegmentos" for hierarchy "seteSegmentos:d2" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 203
-Info (12128): Elaborating entity "seteSegmentosSinalNegativo" for hierarchy "seteSegmentosSinalNegativo:n1" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 218
+Warning (10230): Verilog HDL assignment warning at sistemaComputacional.v(123): truncated value with size 32 to match size of target (1) File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 123
+Info (12128): Elaborating entity "temporizador" for hierarchy "temporizador:t" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 79
+Warning (10230): Verilog HDL assignment warning at temporizador.v(11): truncated value with size 32 to match size of target (3) File: /home-local/aluno/SistemaComputacional/temporizador.v Line: 11
+Info (12128): Elaborating entity "contadorDePrograma" for hierarchy "contadorDePrograma:PC" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 87
+Info (12128): Elaborating entity "extensor27" for hierarchy "contadorDePrograma:PC|extensor27:extendeJump" File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 22
+Info (12128): Elaborating entity "extensor17" for hierarchy "contadorDePrograma:PC|extensor17:extendeBranch" File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 25
+Info (12128): Elaborating entity "memoriaDeInstrucoes" for hierarchy "memoriaDeInstrucoes:M1" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 91
+Warning (10030): Net "memoriaDeInstrucoes[7][26..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[20..8]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[6][21..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[5][16..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[4][16..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[3][11..0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
+Warning (10030): Net "memoriaDeInstrucoes[0]" at memoriaDeInstrucoes.v(13) has no driver or initial value, using a default initial value '0' File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 13
+Info (12128): Elaborating entity "unidadeDeControle" for hierarchy "unidadeDeControle:uc" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 111
+Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(120): variable "zero" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/unidadeDeControle.v Line: 120
+Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(122): variable "estagioEntradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/unidadeDeControle.v Line: 122
+Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(122): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/unidadeDeControle.v Line: 122
+Warning (10235): Verilog HDL Always Construct warning at unidadeDeControle.v(128): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/unidadeDeControle.v Line: 128
+Info (12128): Elaborating entity "extensor22" for hierarchy "extensor22:imediatoExtensor22" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 117
+Info (12128): Elaborating entity "mux" for hierarchy "mux:multiplexador0" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 128
+Info (12128): Elaborating entity "entradaDeDadosSwitch" for hierarchy "entradaDeDadosSwitch:e1" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 135
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(21): variable "estagioEntradaUC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 21
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(22): variable "entradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 22
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(23): variable "entradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 23
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(25): variable "estagioEntradaSwitch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 25
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(26): variable "estagioEntradaBanco" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 26
+Warning (10235): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(27): variable "estagioEntradaUC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 27
+Warning (10240): Verilog HDL Always Construct warning at entradaDeDadosSwitch.v(19): inferring latch(es) for variable "dado", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[0]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[1]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[2]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[3]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[4]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[5]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[6]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[7]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[8]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[9]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[10]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[11]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[12]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[13]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[14]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[15]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[16]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[17]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[18]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[19]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[20]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[21]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[22]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[23]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[24]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[25]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[26]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[27]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[28]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[29]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[30]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (10041): Inferred latch for "dado[31]" at entradaDeDadosSwitch.v(19) File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Info (12128): Elaborating entity "bancoDeRegistradores" for hierarchy "bancoDeRegistradores:br1" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 162
+Info (12128): Elaborating entity "ula" for hierarchy "ula:cpuULA" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 172
+Info (12128): Elaborating entity "memoriaDeDados" for hierarchy "memoriaDeDados:memDados" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 184
+Info (12128): Elaborating entity "quebraNumero" for hierarchy "quebraNumero:q1" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 197
+Info (12128): Elaborating entity "binarioParaBCD" for hierarchy "quebraNumero:q1|binarioParaBCD:binarioParaBCD1" File: /home-local/aluno/SistemaComputacional/quebraNumero.v Line: 34
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(34): truncated value with size 32 to match size of target (4) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 34
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(36): truncated value with size 32 to match size of target (4) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 36
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD.v(38): truncated value with size 32 to match size of target (4) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 38
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "centena", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "dezena", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "unidade", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "deslocado", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at binarioParaBCD.v(24): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "unidade[0]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "unidade[1]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "unidade[2]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "unidade[3]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "dezena[0]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "dezena[1]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "dezena[2]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "dezena[3]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "centena[0]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "centena[1]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "centena[2]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (10041): Inferred latch for "centena[3]" at binarioParaBCD.v(24) File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+Info (12128): Elaborating entity "binarioParaBCD2" for hierarchy "binarioParaBCD2:bOp1" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 201
+Warning (10036): Verilog HDL or VHDL warning at binarioParaBCD2.v(9): object "centena" assigned a value but never read File: /home-local/aluno/SistemaComputacional/binarioParaBCD2.v Line: 9
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD2.v(24): truncated value with size 32 to match size of target (4) File: /home-local/aluno/SistemaComputacional/binarioParaBCD2.v Line: 24
+Warning (10230): Verilog HDL assignment warning at binarioParaBCD2.v(26): truncated value with size 32 to match size of target (4) File: /home-local/aluno/SistemaComputacional/binarioParaBCD2.v Line: 26
+Info (12128): Elaborating entity "seteSegmentos" for hierarchy "seteSegmentos:d2" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 204
+Info (12128): Elaborating entity "seteSegmentosSinalNegativo" for hierarchy "seteSegmentosSinalNegativo:n1" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 219
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "bancoDeRegistradores:br1|banco" is uninferred due to asynchronous read logic File: /home-local/aluno/92256/SistemaComputacional/bancoDeRegistradores.v Line: 30
-    Info (276007): RAM logic "memoriaDeDados:memDados|memoriaDeDados" is uninferred due to asynchronous read logic File: /home-local/aluno/92256/SistemaComputacional/memoriaDeDados.v Line: 19
-Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[1]" is permanently disabled File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[2]" is permanently disabled File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[3]" is permanently disabled File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[4]" is permanently disabled File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[5]" is permanently disabled File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[6]" is permanently disabled File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[7]" is permanently disabled File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[8]" is permanently disabled File: /home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[1] has unsafe behavior File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[1] File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 31
-Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[2] has unsafe behavior File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[1] File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 31
-Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[3] has unsafe behavior File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[1] File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 31
-Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[0] has unsafe behavior File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[1] File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 31
-Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[1] has unsafe behavior File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[1] File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 31
-Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[2] has unsafe behavior File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[1] File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 31
-Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[3] has unsafe behavior File: /home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[1] File: /home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v Line: 31
+    Info (276007): RAM logic "bancoDeRegistradores:br1|banco" is uninferred due to asynchronous read logic File: /home-local/aluno/SistemaComputacional/bancoDeRegistradores.v Line: 30
+    Info (276007): RAM logic "memoriaDeDados:memDados|memoriaDeDados" is uninferred due to asynchronous read logic File: /home-local/aluno/SistemaComputacional/memoriaDeDados.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[1]" is permanently disabled File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[2]" is permanently disabled File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[3]" is permanently disabled File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[4]" is permanently disabled File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[5]" is permanently disabled File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[6]" is permanently disabled File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[7]" is permanently disabled File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Warning (14025): LATCH primitive "entradaDeDadosSwitch:e1|dado[8]" is permanently disabled File: /home-local/aluno/SistemaComputacional/entradaDeDadosSwitch.v Line: 19
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[1] has unsafe behavior File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 33
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[2] has unsafe behavior File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 33
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|centena[3] has unsafe behavior File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 33
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[0] has unsafe behavior File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 33
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[1] has unsafe behavior File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 33
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[2] has unsafe behavior File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 33
+Warning (13012): Latch quebraNumero:q1|binarioParaBCD:binarioParaBCD1|unidade[3] has unsafe behavior File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contadorDePrograma:PC|pc[4] File: /home-local/aluno/SistemaComputacional/contadorDePrograma.v Line: 33
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "saidaNegativo[1]" is stuck at VCC File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 60
-    Warning (13410): Pin "saidaNegativo[2]" is stuck at VCC File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 60
-    Warning (13410): Pin "saidaNegativo[3]" is stuck at VCC File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 60
-    Warning (13410): Pin "saidaNegativo[4]" is stuck at VCC File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 60
-    Warning (13410): Pin "saidaNegativo[5]" is stuck at VCC File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 60
-    Warning (13410): Pin "saidaNegativo[6]" is stuck at VCC File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 60
-    Warning (13410): Pin "saidaDezenaOpcode[5]" is stuck at GND File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 72
+    Warning (13410): Pin "saidaNegativo[1]" is stuck at VCC File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 60
+    Warning (13410): Pin "saidaNegativo[2]" is stuck at VCC File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 60
+    Warning (13410): Pin "saidaNegativo[3]" is stuck at VCC File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 60
+    Warning (13410): Pin "saidaNegativo[4]" is stuck at VCC File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 60
+    Warning (13410): Pin "saidaNegativo[5]" is stuck at VCC File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 60
+    Warning (13410): Pin "saidaNegativo[6]" is stuck at VCC File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 60
+    Warning (13410): Pin "saidaDezenaOpcode[5]" is stuck at GND File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 72
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 796 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file /home-local/aluno/92256/SistemaComputacional/output_files/sistemaComputacional.map.smsg
+Info (144001): Generated suppressed messages file /home-local/aluno/SistemaComputacional/output_files/sistemaComputacional.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "entradaSwitch[0]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-    Warning (15610): No output dependent on input pin "enter" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 15
-    Warning (15610): No output dependent on input pin "entradaSwitch[1]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-    Warning (15610): No output dependent on input pin "entradaSwitch[2]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-    Warning (15610): No output dependent on input pin "entradaSwitch[3]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-    Warning (15610): No output dependent on input pin "entradaSwitch[4]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-    Warning (15610): No output dependent on input pin "entradaSwitch[5]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-    Warning (15610): No output dependent on input pin "entradaSwitch[6]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-    Warning (15610): No output dependent on input pin "entradaSwitch[7]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-    Warning (15610): No output dependent on input pin "entradaSwitch[8]" File: /home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v Line: 16
-Info (21057): Implemented 2397 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "entradaSwitch[0]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+    Warning (15610): No output dependent on input pin "enter" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 15
+    Warning (15610): No output dependent on input pin "entradaSwitch[1]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+    Warning (15610): No output dependent on input pin "entradaSwitch[2]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+    Warning (15610): No output dependent on input pin "entradaSwitch[3]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+    Warning (15610): No output dependent on input pin "entradaSwitch[4]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+    Warning (15610): No output dependent on input pin "entradaSwitch[5]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+    Warning (15610): No output dependent on input pin "entradaSwitch[6]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+    Warning (15610): No output dependent on input pin "entradaSwitch[7]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+    Warning (15610): No output dependent on input pin "entradaSwitch[8]" File: /home-local/aluno/SistemaComputacional/sistemaComputacional.v Line: 16
+Info (21057): Implemented 2580 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 2343 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 73 warnings
-    Info: Peak virtual memory: 993 megabytes
-    Info: Processing ended: Fri Jun 30 14:07:06 2017
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:31
+    Info (21061): Implemented 2526 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
+    Info: Peak virtual memory: 997 megabytes
+    Info: Processing ended: Mon Jul  3 15:17:10 2017
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:32
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in /home-local/aluno/92256/SistemaComputacional/output_files/sistemaComputacional.map.smsg.
+The suppressed messages can be found in /home-local/aluno/SistemaComputacional/output_files/sistemaComputacional.map.smsg.
 
 

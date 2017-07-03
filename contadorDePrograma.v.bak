@@ -3,8 +3,7 @@ module contadorDePrograma(clock,
 								  controlePC, 
 								  enderecoJump, 
 								  deslocamentoBranch, 
-								  pc,
-								  endRegister);
+								  pc);
 								  
 //Entradas
 	input clock;
@@ -12,7 +11,6 @@ module contadorDePrograma(clock,
 	input reset;
 	input [26:0] enderecoJump;
 	input [16:0] deslocamentoBranch;
-	input [31:0] endRegister;
 
 //Saidas
 	output reg [31:0] pc;
@@ -38,7 +36,6 @@ module contadorDePrograma(clock,
 				3'b000 : pc <= pc + 1;
 				3'b001 : pc <= jumpExtendido;
 				3'b010 : pc <= branchExtendido;
-				3'b011 : pc <= endRegister;
 				3'b111 : pc <= pc;
 				default : pc <= pc + 1;
 			endcase

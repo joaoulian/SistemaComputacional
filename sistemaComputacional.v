@@ -83,7 +83,8 @@ module sistemaComputacional(clock50,
 								 .controlePC(pcControle),
 								 .enderecoJump(enderecoJump),
 								 .deslocamentoBranch(imediatoExtendido17),
-								 .pc(pcParaEndereco));
+								 .pc(pcParaEndereco),
+								 .endRegister(dadoRd));
 	
 	memoriaDeInstrucoes M1(.endereco(pcParaEndereco),
 								  .instrucao(instrucao),
@@ -170,7 +171,7 @@ module sistemaComputacional(clock50,
 					.B(vaiPraULA),
 					.ulaSaida(ulaSaida));
 					
-	mux muxLoadR (.entrada1(imediatoExtendido2),
+	mux muxLoadR (.entrada1(imediatoExtendido22),
 					  .entrada2(dadoRs),
 					  .seletor(selecionaLoadR),
 					  .saida(enderecoLoad));
