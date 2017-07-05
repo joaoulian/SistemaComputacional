@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Jul 05 11:53:16 2017
-Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Analysis & Synthesis Status : Successful - Wed Jul  5 17:05:53 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 Revision Name : sistemaComputacional
 Top-level Entity Name : sistemaComputacional
 Family : Cyclone IV E
-Total logic elements : 2,298
-    Total combinational functions : 1,242
-    Dedicated logic registers : 1,129
-Total registers : 1129
+Total logic elements : 4,072
+    Total combinational functions : 2,186
+    Dedicated logic registers : 1,971
+Total registers : 1971
 Total pins : 160
 Total virtual pins : 0
 Total memory bits : 0
