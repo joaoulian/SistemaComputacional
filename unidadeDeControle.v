@@ -157,9 +157,9 @@ module unidadeDeControle(opcode,
 			
 			//Determina selecionaLoadR
 			if (opcode == 5'd26 || opcode == 5'd15) begin
-				selecionaLoadR <= 1'b0;
-			end else begin
 				selecionaLoadR <= 1'b1;
+			end else begin
+				selecionaLoadR <= 1'b0;
 			end
 						
 			//Determinar saida de dados

@@ -3,28 +3,28 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'contadorDePrograma:PC|pc[0]'
-Slack : -11.811
-TNS   : -131.727
+Slack : -10.787
+TNS   : -115.046
 
 Type  : Slow 1200mV 85C Model Setup 'temporizador:t|count[2]'
-Slack : -11.277
-TNS   : -8417.112
+Slack : -9.780
+TNS   : -7581.822
 
 Type  : Slow 1200mV 85C Model Setup 'clock50'
-Slack : -1.915
-TNS   : -1.963
+Slack : -0.386
+TNS   : -0.386
 
 Type  : Slow 1200mV 85C Model Hold 'clock50'
-Slack : 0.404
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'temporizador:t|count[2]'
-Slack : 0.692
-TNS   : 0.000
+Slack : -2.196
+TNS   : -2.196
 
 Type  : Slow 1200mV 85C Model Hold 'contadorDePrograma:PC|pc[0]'
-Slack : 1.663
-TNS   : 0.000
+Slack : -1.733
+TNS   : -1.733
+
+Type  : Slow 1200mV 85C Model Hold 'temporizador:t|count[2]'
+Slack : -1.587
+TNS   : -24.161
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock50'
 Slack : -3.000
@@ -32,35 +32,35 @@ TNS   : -6.855
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'temporizador:t|count[2]'
 Slack : -1.285
-TNS   : -1611.390
+TNS   : -1446.910
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'contadorDePrograma:PC|pc[0]'
-Slack : 0.346
+Slack : 0.435
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'contadorDePrograma:PC|pc[0]'
-Slack : -10.839
-TNS   : -121.231
+Slack : -9.894
+TNS   : -105.378
 
 Type  : Slow 1200mV 0C Model Setup 'temporizador:t|count[2]'
-Slack : -10.408
-TNS   : -7703.347
+Slack : -8.891
+TNS   : -6961.365
 
 Type  : Slow 1200mV 0C Model Setup 'clock50'
-Slack : -1.687
-TNS   : -1.687
+Slack : -0.248
+TNS   : -0.248
 
 Type  : Slow 1200mV 0C Model Hold 'clock50'
-Slack : 0.356
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'temporizador:t|count[2]'
-Slack : 0.599
-TNS   : 0.000
+Slack : -1.982
+TNS   : -1.982
 
 Type  : Slow 1200mV 0C Model Hold 'contadorDePrograma:PC|pc[0]'
-Slack : 1.543
-TNS   : 0.000
+Slack : -1.521
+TNS   : -1.521
+
+Type  : Slow 1200mV 0C Model Hold 'temporizador:t|count[2]'
+Slack : -1.467
+TNS   : -24.246
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock50'
 Slack : -3.000
@@ -68,46 +68,46 @@ TNS   : -6.855
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'temporizador:t|count[2]'
 Slack : -1.285
-TNS   : -1611.390
+TNS   : -1446.910
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'contadorDePrograma:PC|pc[0]'
-Slack : 0.250
+Slack : 0.397
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'temporizador:t|count[2]'
-Slack : -5.366
-TNS   : -3723.956
-
 Type  : Fast 1200mV 0C Model Setup 'contadorDePrograma:PC|pc[0]'
-Slack : -5.193
-TNS   : -57.551
+Slack : -4.573
+TNS   : -47.634
+
+Type  : Fast 1200mV 0C Model Setup 'temporizador:t|count[2]'
+Slack : -4.449
+TNS   : -3140.858
 
 Type  : Fast 1200mV 0C Model Setup 'clock50'
-Slack : -0.854
-TNS   : -0.854
-
-Type  : Fast 1200mV 0C Model Hold 'temporizador:t|count[2]'
-Slack : 0.163
+Slack : 0.329
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clock50'
-Slack : 0.183
-TNS   : 0.000
+Slack : -1.229
+TNS   : -1.229
 
 Type  : Fast 1200mV 0C Model Hold 'contadorDePrograma:PC|pc[0]'
-Slack : 0.381
-TNS   : 0.000
+Slack : -1.169
+TNS   : -1.374
+
+Type  : Fast 1200mV 0C Model Hold 'temporizador:t|count[2]'
+Slack : -0.908
+TNS   : -27.070
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock50'
 Slack : -3.000
-TNS   : -6.189
+TNS   : -6.183
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'temporizador:t|count[2]'
 Slack : -1.000
-TNS   : -1254.000
+TNS   : -1126.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'contadorDePrograma:PC|pc[0]'
-Slack : 0.383
+Slack : 0.269
 TNS   : 0.000
 
 ------------------------------------------------------------

@@ -7,7 +7,12 @@ module sistemaComputacional(clock50,
 									 saidaNegativo,
 									 saidaUnidade,
 									 saidaDezenaOpcode,
-									 saidaUnidadeOpcode);
+									 saidaUnidadeOpcode,
+									 opcode,
+									 dadoEscritaNovo,
+									 dadoRd,
+									 rd,
+									 imediatoExtendido22);
 									 
 //Entradas
 	input clock50;
@@ -18,16 +23,16 @@ module sistemaComputacional(clock50,
 //Saidas
 	wire [31:0] ulaSaida;
 	wire [31:0] dadoEscrita;
-	wire [31:0] dadoEscritaNovo;
-	wire [4:0] opcode;
+	output [31:0] dadoEscritaNovo;
+	output [4:0] opcode;
 	wire clock;
 	
 //Variaveis locais
 	wire [31:0] pcParaEndereco;
 	wire [31:0] instrucao;
 	wire [31:0] imediatoExtendido17;
-	wire [31:0] imediatoExtendido22;
-	wire [31:0]	dadoRd;
+	output [31:0] imediatoExtendido22;
+	output [31:0]	dadoRd;
 	wire [31:0] enderecoLoad;
 	wire [31:0]	dadoRs;
 	wire [31:0] dadoEscritaULA;
@@ -42,7 +47,7 @@ module sistemaComputacional(clock50,
 	wire [2:0] pcControle;
 	wire [4:0] rs;
 	wire [4:0] rt;
-	wire [4:0] rd;
+	output [4:0] rd;
 	wire [4:0] endEscrita;
 	wire [4:0] endEscritaNovo;
 	wire zero;
