@@ -1,0 +1,120 @@
+Archive Project report for sistemaComputacional
+Thu Jul 06 17:02:58 2017
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Thu Jul 06 17:02:58 2017 ;
+; Revision Name          ; sistemaComputacional                  ;
+; Top-level Entity Name  ; sistemaComputacional                  ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/output_files/sistemaComputacional.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'sistemaComputacional.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 381 megabytes
+    Info: Processing ended: Thu Jul 06 17:02:58 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-----------------------------------------------------------------+
+; Files Archived                                                  ;
++-----------------------------------------------------------------+
+; File Name                                                       ;
++-----------------------------------------------------------------+
+; assignment_defaults.qdf                                         ;
+; bancoDeRegistradores.v                                          ;
+; bancoDeRegistradores.vwf                                        ;
+; binarioParaBCD.v                                                ;
+; binarioParaBCD.vwf                                              ;
+; binarioParaBCD2.v                                               ;
+; binarioParaBCD2.vwf                                             ;
+; contadorDePrograma.v                                            ;
+; contadorDePrograma.vwf                                          ;
+; db/sistemaComputacional.cmp.hdb                                 ;
+; db/sistemaComputacional.db_info                                 ;
+; DeBounce.v                                                      ;
+; entradaDeDadosSwitch.v                                          ;
+; entradaDeDadosSwitch.vwf                                        ;
+; extensor17.v                                                    ;
+; extensor22.v                                                    ;
+; extensor27.v                                                    ;
+; incremental_db/compiled_partitions/sistemaComputacional.db_info ;
+; memoriaDeDados.v                                                ;
+; memoriaDeDados.vwf                                              ;
+; memoriaDeInstrucoes.v                                           ;
+; memoriaDeInstrucoes.vwf                                         ;
+; mux.v                                                           ;
+; output_files/Waveform.vwf                                       ;
+; output_files/Waveform1.vwf                                      ;
+; pc.vwf                                                          ;
+; quebraNumero.v                                                  ;
+; quebraNumero.vwf                                                ;
+; seteSegmentos.v                                                 ;
+; seteSegmentos.vwf                                               ;
+; seteSegmentosSinalNegativo.v                                    ;
+; sistemaComputacional.qpf                                        ;
+; sistemaComputacional.qsf                                        ;
+; sistemaComputacional.v                                          ;
+; sistemaComputacional.vwf                                        ;
+; sistemaComputacional_assignment_defaults.qdf                    ;
+; temporizador.v                                                  ;
+; teste.vwf                                                       ;
+; uC2.vwf                                                         ;
+; ucSaidaTeste.vwf                                                ;
+; ula.v                                                           ;
+; ula.vwf                                                         ;
+; ula2.vwf                                                        ;
+; unidadeDeControle.v                                             ;
+; unidadeDeControle.vwf                                           ;
+; wave.vwf                                                        ;
+; Waveform.vwf                                                    ;
+; Waveform1.vwf                                                   ;
++-----------------------------------------------------------------+
+
+

@@ -2,52 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Setup 'temporizador:t|count[15]'
-Slack : -15.615
-TNS   : -23179.797
+Type  : Setup 'temporizador:t|count[20]'
+Slack : -127.539
+TNS   : -76526.850
 
 Type  : Setup 'contadorDePrograma:PC|pc[0]'
-Slack : -13.489
-TNS   : -152.678
+Slack : -12.849
+TNS   : -145.607
 
 Type  : Setup 'clock50'
-Slack : -1.604
-TNS   : -16.301
+Slack : -1.873
+TNS   : -25.075
 
 Type  : Hold 'contadorDePrograma:PC|pc[0]'
-Slack : -0.267
-TNS   : -1.078
-
-Type  : Hold 'clock50'
-Slack : 0.408
+Slack : 0.025
 TNS   : 0.000
 
-Type  : Hold 'temporizador:t|count[15]'
-Slack : 0.921
+Type  : Hold 'clock50'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Hold 'temporizador:t|count[20]'
+Slack : 0.412
 TNS   : 0.000
 
 Type  : Recovery 'bancoDeRegistradores:br1|estagioEntradaBanco'
-Slack : -9.636
-TNS   : -9.636
+Slack : -6.614
+TNS   : -6.614
 
 Type  : Removal 'bancoDeRegistradores:br1|estagioEntradaBanco'
-Slack : 1.825
+Slack : 1.289
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'clock50'
 Slack : -3.000
-TNS   : -23.560
+TNS   : -29.985
+
+Type  : Minimum Pulse Width 'temporizador:t|count[20]'
+Slack : -1.285
+TNS   : -4494.930
 
 Type  : Minimum Pulse Width 'contadorDePrograma:PC|pc[0]'
-Slack : -2.044
-TNS   : -348.360
-
-Type  : Minimum Pulse Width 'temporizador:t|count[15]'
-Slack : -1.285
-TNS   : -2505.750
+Slack : -0.758
+TNS   : -102.016
 
 Type  : Minimum Pulse Width 'bancoDeRegistradores:br1|estagioEntradaBanco'
-Slack : 0.437
+Slack : 0.432
 TNS   : 0.000
 
 ------------------------------------------------------------

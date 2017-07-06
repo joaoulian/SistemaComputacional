@@ -1,5 +1,5 @@
 Archive Project report for sistemaComputacional
-Fri Jun 30 14:16:53 2017
+Thu Jul  6 17:04:06 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Jun 30 14:16:53 2017 ;
+; Archive Project Status ; Successful - Thu Jul  6 17:04:06 2017 ;
 ; Revision Name          ; sistemaComputacional                  ;
 ; Top-level Entity Name  ; sistemaComputacional                  ;
 ; Family                 ; Cyclone IV E                          ;
@@ -50,17 +50,17 @@ Info: File Set 'Source control' contains:
     Info: Project source and settings files
     Info: Automatically detected source files
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory /home-local/aluno/92256/SistemaComputacional/
+Info (13213): Using common directory /home-local/aluno/SistemaComputacional/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive '/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qar'
+Info: Generated archive '/home-local/aluno/sistemaComputacional_teste.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'sistemaComputacional.archive.rpt'
 Info (23030): Evaluation of Tcl script /opt/intelFPGA/16.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1051 megabytes
-    Info: Processing ended: Fri Jun 30 14:16:53 2017
+    Info: Peak virtual memory: 1056 megabytes
+    Info: Processing ended: Thu Jul  6 17:04:06 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -90,6 +90,8 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; memoriaDeInstrucoes.v                        ;
 ; memoriaDeInstrucoes.vwf                      ;
 ; mux.v                                        ;
+; output_files/Waveform.vwf                    ;
+; output_files/Waveform1.vwf                   ;
 ; pc.vwf                                       ;
 ; quebraNumero.v                               ;
 ; quebraNumero.vwf                             ;
@@ -110,7 +112,9 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; ula2.vwf                                     ;
 ; unidadeDeControle.v                          ;
 ; unidadeDeControle.vwf                        ;
+; wave.vwf                                     ;
 ; Waveform.vwf                                 ;
+; Waveform1.vwf                                ;
 +----------------------------------------------+
 
 

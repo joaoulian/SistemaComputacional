@@ -16,6 +16,7 @@ entity sistemaComputacional is
         dadoEscritaNovo : out    vl_logic_vector(31 downto 0);
         dadoRd          : out    vl_logic_vector(31 downto 0);
         rd              : out    vl_logic_vector(4 downto 0);
-        imediatoExtendido22: out    vl_logic_vector(31 downto 0)
+        imediatoExtendido22: out    vl_logic_vector(31 downto 0);
+        dadoRs          : out    vl_logic_vector(31 downto 0)
     );
 end sistemaComputacional;

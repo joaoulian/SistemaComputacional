@@ -12,7 +12,8 @@ module sistemaComputacional(clock50,
 									 dadoEscritaNovo,
 									 dadoRd,
 									 rd,
-									 imediatoExtendido22);
+									 imediatoExtendido22,
+									 dadoRs);
 									 
 //Entradas
 	input clock50;
@@ -34,7 +35,7 @@ module sistemaComputacional(clock50,
 	output [31:0] imediatoExtendido22;
 	output [31:0]	dadoRd;
 	wire [31:0] enderecoLoad;
-	wire [31:0]	dadoRs;
+	output [31:0]	dadoRs;
 	wire [31:0] dadoEscritaULA;
 	wire [31:0] vaiPraULA;
 	wire		  selecionaRegEscrita;

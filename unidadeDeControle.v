@@ -61,19 +61,18 @@ module unidadeDeControle(opcode,
 			end
 			
 			//Determinar o selecionaEndEscrita
-			if (opcode == 5'd1  || opcode == 5'd3  ||
+			if (opcode == 5'd1  || opcode == 5'd2  ||
 				 opcode == 5'd5  || opcode == 5'd7  ||
 				 opcode == 5'd14 || opcode == 5'd28 ||
 				 opcode == 5'd29 || opcode == 5'd30 ||
-				 opcode == 5'd31) begin
+				 opcode == 5'd8  || opcode == 5'd31) begin
 				selecionaEndEscrita <= 1'b1;
 			end else begin
 				selecionaEndEscrita <= 1'b0;
 			end
 			
 			//Determinar o selecionaULA
-			if (opcode == 5'd2  || opcode == 5'd4  ||
-				 opcode == 5'd6  || opcode == 5'd8  ||
+			if (opcode == 5'd6  || opcode == 5'd4  ||
 				 opcode == 5'd9  || opcode == 5'd10 ||
 				 opcode == 5'd11 || opcode == 5'd12 ||
 				 opcode == 5'd13 || opcode == 5'd22 ||
@@ -84,13 +83,13 @@ module unidadeDeControle(opcode,
 			end
 			
 			//Determinar ulaControle
-			if (opcode == 5'd1 || opcode == 5'd2 || opcode == 5'd22) begin //add e addi
+			if (opcode == 5'd1 || opcode == 5'd22) begin //add e addi
 				ulaControle <= 4'd0;
 			end else if (opcode == 5'd3 || opcode == 5'd4) begin //sub e subi
 				ulaControle <= 4'd1;
 			end else if (opcode == 5'd5 || opcode == 5'd6) begin //and e andi
 				ulaControle <= 4'd2;
-			end else if (opcode == 5'd7 || opcode == 5'd8) begin //or e ori
+			end else if (opcode == 5'd7) begin //or e ori
 				ulaControle <= 4'd3;
 			end else if (opcode == 5'd9) begin //not
 				ulaControle <= 4'd4;
@@ -108,8 +107,12 @@ module unidadeDeControle(opcode,
 				ulaControle <= 4'd10;
 			end else if (opcode == 5'd31) begin
 				ulaControle <= 4'd11;
-			end else begin
+			end else if (opcode == 5'd2) begin
 				ulaControle <= 4'd12;
+			end else if (opcode == 5'd8) begin
+				ulaControle <= 4'd13;
+			end else begin
+				ulaControle <= 4'd16;
 			end
 			
 			//Determinar pcControle

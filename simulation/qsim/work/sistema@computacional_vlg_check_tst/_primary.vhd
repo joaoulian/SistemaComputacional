@@ -4,6 +4,7 @@ entity sistemaComputacional_vlg_check_tst is
     port(
         dadoEscritaNovo : in     vl_logic_vector(31 downto 0);
         dadoRd          : in     vl_logic_vector(31 downto 0);
+        dadoRs          : in     vl_logic_vector(31 downto 0);
         imediatoExtendido22: in     vl_logic_vector(31 downto 0);
         opcode          : in     vl_logic_vector(4 downto 0);
         rd              : in     vl_logic_vector(4 downto 0);

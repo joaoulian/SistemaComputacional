@@ -1,0 +1,59 @@
+Quartus II Archive log --	C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/output_files/sistemaComputacional.qarlog
+
+Archive:	C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/output_files/sistemaComputacional.qar
+Date:		Thu Jul 06 17:02:57 2017
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Full Version
+
+	=========== Files Selected: ===========
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/DeBounce.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/Waveform.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/Waveform1.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/assignment_defaults.qdf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/bancoDeRegistradores.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/bancoDeRegistradores.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/binarioParaBCD.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/binarioParaBCD.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/binarioParaBCD2.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/binarioParaBCD2.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/contadorDePrograma.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/contadorDePrograma.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/db/sistemaComputacional.cmp.hdb
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/db/sistemaComputacional.db_info
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/entradaDeDadosSwitch.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/entradaDeDadosSwitch.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/extensor17.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/extensor22.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/extensor27.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/incremental_db/compiled_partitions/sistemaComputacional.db_info
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/memoriaDeDados.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/memoriaDeDados.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/memoriaDeInstrucoes.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/memoriaDeInstrucoes.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/mux.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/output_files/Waveform.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/output_files/Waveform1.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/pc.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/quebraNumero.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/quebraNumero.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/seteSegmentos.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/seteSegmentos.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/seteSegmentosSinalNegativo.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/sistemaComputacional.qpf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/sistemaComputacional.qsf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/sistemaComputacional.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/sistemaComputacional.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/sistemaComputacional_assignment_defaults.qdf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/temporizador.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/teste.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/uC2.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/ucSaidaTeste.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/ula.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/ula.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/ula2.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/unidadeDeControle.v
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/unidadeDeControle.vwf
+C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/wave.vwf
+	======= Total: 48 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
