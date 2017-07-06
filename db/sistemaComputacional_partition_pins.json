@@ -432,7 +432,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "rd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rd[4]",
+					"strict" : false
+				},
+				{
 					"name" : "imediatoExtendido22[0]",
+					"strict" : false
+				},
+				{
+					"name" : "imediatoExtendido22[1]",
 					"strict" : false
 				},
 				{
@@ -440,7 +452,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "imediatoExtendido22[3]",
+					"strict" : false
+				},
+				{
 					"name" : "imediatoExtendido22[4]",
+					"strict" : false
+				},
+				{
+					"name" : "imediatoExtendido22[5]",
+					"strict" : false
+				},
+				{
+					"name" : "imediatoExtendido22[6]",
 					"strict" : false
 				},
 				{
@@ -449,6 +473,10 @@
 				},
 				{
 					"name" : "imediatoExtendido22[13]",
+					"strict" : false
+				},
+				{
+					"name" : "imediatoExtendido22[17]",
 					"strict" : false
 				},
 				{
