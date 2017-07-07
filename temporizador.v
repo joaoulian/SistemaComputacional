@@ -4,7 +4,7 @@ module temporizador(clockin,
    input clockin;
 	output wire clockout;
 
-	parameter n = 25;
+	parameter n = 20;
 	reg [n:0] count;
 	
 	always @ (posedge clockin) begin

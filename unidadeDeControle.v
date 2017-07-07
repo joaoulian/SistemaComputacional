@@ -65,7 +65,8 @@ module unidadeDeControle(opcode,
 				 opcode == 5'd5  || opcode == 5'd7  ||
 				 opcode == 5'd14 || opcode == 5'd28 ||
 				 opcode == 5'd29 || opcode == 5'd30 ||
-				 opcode == 5'd8  || opcode == 5'd31) begin
+				 opcode == 5'd8  || opcode == 5'd31 ||
+				 opcode == 5'd3) begin
 				selecionaEndEscrita <= 1'b1;
 			end else begin
 				selecionaEndEscrita <= 1'b0;
@@ -112,7 +113,7 @@ module unidadeDeControle(opcode,
 			end else if (opcode == 5'd8) begin
 				ulaControle <= 4'd13;
 			end else begin
-				ulaControle <= 4'd16;
+				ulaControle <= 4'd14;
 			end
 			
 			//Determinar pcControle
