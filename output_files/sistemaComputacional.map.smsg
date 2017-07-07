@@ -1,23 +1,27 @@
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(28): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 28
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(33): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 33
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(40): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 40
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(26): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 26
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(31): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 31
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(38): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 38
 Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(45): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 45
 Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(50): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 50
 Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(55): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 55
 Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(60): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 60
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(67): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 67
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(73): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 73
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(78): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 78
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(65): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 65
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(70): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 70
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(77): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 77
 Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(83): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 83
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(87): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 87
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(91): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 91
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(96): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 96
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(104): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 104
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(109): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 109
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(114): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 114
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(119): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 119
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(135): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 135
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(140): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 140
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(88): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 88
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(93): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 93
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(98): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 98
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(103): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 103
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(107): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 107
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(111): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 111
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(116): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 116
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(124): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 124
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(129): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 129
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(134): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 134
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(139): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 139
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(153): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 153
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(158): extended using "x" or "z" File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 158
 Warning (10268): Verilog HDL information at memoriaDeInstrucoes.v(17): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/SistemaComputacional/memoriaDeInstrucoes.v Line: 17
 Warning (10268): Verilog HDL information at binarioParaBCD.v(24): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/SistemaComputacional/binarioParaBCD.v Line: 24
 Warning (10268): Verilog HDL information at binarioParaBCD2.v(18): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/SistemaComputacional/binarioParaBCD2.v Line: 18
