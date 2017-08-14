@@ -1,51 +1,51 @@
-Quartus Prime Archive log --	/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qarlog
+Quartus Prime Archive log --	/home-local/aluno/sistemaComputacional_restored/sistemaComputacional.qarlog
 
-Archive:	/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qar
-Date:		Fri Jun 30 14:16:52 2017
+Archive:	/home-local/aluno/sistemaComputacional_restored/sistemaComputacional.qar
+Date:		Mon Aug 14 09:05:14 2017
 Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 	=========== Files Selected: ===========
-/home-local/aluno/92256/SistemaComputacional/DeBounce.v
-/home-local/aluno/92256/SistemaComputacional/Waveform.vwf
-/home-local/aluno/92256/SistemaComputacional/assignment_defaults.qdf
-/home-local/aluno/92256/SistemaComputacional/bancoDeRegistradores.v
-/home-local/aluno/92256/SistemaComputacional/bancoDeRegistradores.vwf
-/home-local/aluno/92256/SistemaComputacional/binarioParaBCD.v
-/home-local/aluno/92256/SistemaComputacional/binarioParaBCD.vwf
-/home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.v
-/home-local/aluno/92256/SistemaComputacional/binarioParaBCD2.vwf
-/home-local/aluno/92256/SistemaComputacional/contadorDePrograma.v
-/home-local/aluno/92256/SistemaComputacional/contadorDePrograma.vwf
-/home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.v
-/home-local/aluno/92256/SistemaComputacional/entradaDeDadosSwitch.vwf
-/home-local/aluno/92256/SistemaComputacional/extensor17.v
-/home-local/aluno/92256/SistemaComputacional/extensor22.v
-/home-local/aluno/92256/SistemaComputacional/extensor27.v
-/home-local/aluno/92256/SistemaComputacional/memoriaDeDados.v
-/home-local/aluno/92256/SistemaComputacional/memoriaDeDados.vwf
-/home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.v
-/home-local/aluno/92256/SistemaComputacional/memoriaDeInstrucoes.vwf
-/home-local/aluno/92256/SistemaComputacional/mux.v
-/home-local/aluno/92256/SistemaComputacional/pc.vwf
-/home-local/aluno/92256/SistemaComputacional/quebraNumero.v
-/home-local/aluno/92256/SistemaComputacional/quebraNumero.vwf
-/home-local/aluno/92256/SistemaComputacional/seteSegmentos.v
-/home-local/aluno/92256/SistemaComputacional/seteSegmentos.vwf
-/home-local/aluno/92256/SistemaComputacional/seteSegmentosSinalNegativo.v
-/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qpf
-/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.qsf
-/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.v
-/home-local/aluno/92256/SistemaComputacional/sistemaComputacional.vwf
-/home-local/aluno/92256/SistemaComputacional/sistemaComputacional_assignment_defaults.qdf
-/home-local/aluno/92256/SistemaComputacional/temporizador.v
-/home-local/aluno/92256/SistemaComputacional/teste.vwf
-/home-local/aluno/92256/SistemaComputacional/uC2.vwf
-/home-local/aluno/92256/SistemaComputacional/ucSaidaTeste.vwf
-/home-local/aluno/92256/SistemaComputacional/ula.v
-/home-local/aluno/92256/SistemaComputacional/ula.vwf
-/home-local/aluno/92256/SistemaComputacional/ula2.vwf
-/home-local/aluno/92256/SistemaComputacional/unidadeDeControle.v
-/home-local/aluno/92256/SistemaComputacional/unidadeDeControle.vwf
+/home-local/aluno/sistemaComputacional_restored/DeBounce.v
+/home-local/aluno/sistemaComputacional_restored/Waveform.vwf
+/home-local/aluno/sistemaComputacional_restored/assignment_defaults.qdf
+/home-local/aluno/sistemaComputacional_restored/bancoDeRegistradores.v
+/home-local/aluno/sistemaComputacional_restored/bancoDeRegistradores.vwf
+/home-local/aluno/sistemaComputacional_restored/binarioParaBCD.v
+/home-local/aluno/sistemaComputacional_restored/binarioParaBCD.vwf
+/home-local/aluno/sistemaComputacional_restored/binarioParaBCD2.v
+/home-local/aluno/sistemaComputacional_restored/binarioParaBCD2.vwf
+/home-local/aluno/sistemaComputacional_restored/contadorDePrograma.v
+/home-local/aluno/sistemaComputacional_restored/contadorDePrograma.vwf
+/home-local/aluno/sistemaComputacional_restored/entradaDeDadosSwitch.v
+/home-local/aluno/sistemaComputacional_restored/entradaDeDadosSwitch.vwf
+/home-local/aluno/sistemaComputacional_restored/extensor17.v
+/home-local/aluno/sistemaComputacional_restored/extensor22.v
+/home-local/aluno/sistemaComputacional_restored/extensor27.v
+/home-local/aluno/sistemaComputacional_restored/memoriaDeDados.v
+/home-local/aluno/sistemaComputacional_restored/memoriaDeDados.vwf
+/home-local/aluno/sistemaComputacional_restored/memoriaDeInstrucoes.v
+/home-local/aluno/sistemaComputacional_restored/memoriaDeInstrucoes.vwf
+/home-local/aluno/sistemaComputacional_restored/mux.v
+/home-local/aluno/sistemaComputacional_restored/pc.vwf
+/home-local/aluno/sistemaComputacional_restored/quebraNumero.v
+/home-local/aluno/sistemaComputacional_restored/quebraNumero.vwf
+/home-local/aluno/sistemaComputacional_restored/seteSegmentos.v
+/home-local/aluno/sistemaComputacional_restored/seteSegmentos.vwf
+/home-local/aluno/sistemaComputacional_restored/seteSegmentosSinalNegativo.v
+/home-local/aluno/sistemaComputacional_restored/sistemaComputacional.qpf
+/home-local/aluno/sistemaComputacional_restored/sistemaComputacional.qsf
+/home-local/aluno/sistemaComputacional_restored/sistemaComputacional.v
+/home-local/aluno/sistemaComputacional_restored/sistemaComputacional.vwf
+/home-local/aluno/sistemaComputacional_restored/sistemaComputacional_assignment_defaults.qdf
+/home-local/aluno/sistemaComputacional_restored/temporizador.v
+/home-local/aluno/sistemaComputacional_restored/teste.vwf
+/home-local/aluno/sistemaComputacional_restored/uC2.vwf
+/home-local/aluno/sistemaComputacional_restored/ucSaidaTeste.vwf
+/home-local/aluno/sistemaComputacional_restored/ula.v
+/home-local/aluno/sistemaComputacional_restored/ula.vwf
+/home-local/aluno/sistemaComputacional_restored/ula2.vwf
+/home-local/aluno/sistemaComputacional_restored/unidadeDeControle.v
+/home-local/aluno/sistemaComputacional_restored/unidadeDeControle.vwf
 	======= Total: 41 files to archive =======
 
 	================ Status: ===============

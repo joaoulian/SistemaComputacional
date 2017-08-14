@@ -1,14 +1,14 @@
-Fitter Status : Successful - Fri Jul  7 14:02:43 2017
+Fitter Status : Successful - Mon Aug 14 08:58:34 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 Revision Name : sistemaComputacional
 Top-level Entity Name : sistemaComputacional
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 7,226 / 114,480 ( 6 % )
-    Total combinational functions : 5,258 / 114,480 ( 5 % )
-    Dedicated logic registers : 4,254 / 114,480 ( 4 % )
-Total registers : 4254
+Total logic elements : 4,284 / 114,480 ( 4 % )
+    Total combinational functions : 3,379 / 114,480 ( 3 % )
+    Dedicated logic registers : 2,004 / 114,480 ( 2 % )
+Total registers : 2004
 Total pins : 192 / 529 ( 36 % )
 Total virtual pins : 0
 Total memory bits : 0 / 3,981,312 ( 0 % )

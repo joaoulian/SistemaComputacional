@@ -16,7 +16,7 @@ module memoriaDeDados		(clock,
 	output [31:0] 		dadoLeitura;
 	
 //Declaracao da memoria de dados
-	reg [31:0] 			memoriaDeDados[100:0];
+	reg [31:0] 			memoriaDeDados[30:0];
 	
 //Logica combinacional
 	assign dadoLeitura = memoriaDeDados[enderecoLeitura];

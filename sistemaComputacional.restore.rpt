@@ -1,5 +1,5 @@
 Restore Archived Project report for sistemaComputacional
-Fri Jun 30 10:36:44 2017
+Mon Aug 14 05:41:54 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Fri Jun 30 10:36:44 2017 ;
+; Restore Archived Project Status ; Successful - Mon Aug 14 05:41:54 2017 ;
 ; Revision Name                   ; sistemaComputacional                  ;
 ; Top-level Entity Name           ; sistemaComputacional                  ;
 ; Family                          ; Cyclone IV E                          ;
@@ -47,13 +47,13 @@ agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored '/home-local/aluno/92256/sistemaComputacional_versaoFinal.qar' into the '/home-local/aluno/92256/sistemaComputacional_versaoFinal_restored/' directory
+Info: Successfully restored '/home-local/aluno/sistemaComputacional.qar' into the '/home-local/aluno/sistemaComputacional_restored/' directory
 Info: Generated report 'sistemaComputacional.restore.rpt'
 Info (23030): Evaluation of Tcl script /opt/intelFPGA/16.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 1046 megabytes
-    Info: Processing ended: Fri Jun 30 10:36:44 2017
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Mon Aug 14 05:41:54 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
@@ -63,6 +63,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; File Name                                                       ;
 +-----------------------------------------------------------------+
 ; DeBounce.v                                                      ;
+; Waveform.vwf                                                    ;
 ; assignment_defaults.qdf                                         ;
 ; bancoDeRegistradores.v                                          ;
 ; bancoDeRegistradores.vwf                                        ;

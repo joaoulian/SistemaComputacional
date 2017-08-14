@@ -1,5 +1,5 @@
 Flow report for sistemaComputacional
-Fri Jul  7 14:03:10 2017
+Mon Aug 14 08:58:57 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -41,17 +41,17 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Jul  7 14:03:10 2017           ;
+; Flow Status                        ; Successful - Mon Aug 14 08:58:57 2017           ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
 ; Revision Name                      ; sistemaComputacional                            ;
 ; Top-level Entity Name              ; sistemaComputacional                            ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 7,226 / 114,480 ( 6 % )                         ;
-;     Total combinational functions  ; 5,258 / 114,480 ( 5 % )                         ;
-;     Dedicated logic registers      ; 4,254 / 114,480 ( 4 % )                         ;
-; Total registers                    ; 4254                                            ;
+; Total logic elements               ; 4,284 / 114,480 ( 4 % )                         ;
+;     Total combinational functions  ; 3,379 / 114,480 ( 3 % )                         ;
+;     Dedicated logic registers      ; 2,004 / 114,480 ( 2 % )                         ;
+; Total registers                    ; 2004                                            ;
 ; Total pins                         ; 192 / 529 ( 36 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                           ;
@@ -65,37 +65,39 @@ agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 07/07/2017 13:59:05  ;
+; Start date & time ; 08/14/2017 08:56:23  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; sistemaComputacional ;
 +-------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                           ;
-+-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                                                 ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 255332401432539.149944674504975                                       ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                    ; --            ; --          ; eda_simulation ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/Users/aluno/Desktop/COMPILER/SistemaComputacional/simulation/qsim/ ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                           ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                             ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                                                  ; --            ; --          ; eda_simulation ;
-; FITTER_EFFORT                       ; Fast Fit                                                              ; Auto Fit      ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                                     ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                   ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                 ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                          ; --            ; --          ; --             ;
-; SAVE_DISK_SPACE                     ; Off                                                                   ; On            ; --          ; --             ;
-; SMART_RECOMPILE                     ; On                                                                    ; Off           ; --          ; --             ;
-; TIMEQUEST_MULTICORNER_ANALYSIS      ; Off                                                                   ; On            ; --          ; --             ;
-+-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++-------------------------------------+----------------------------------------+--------------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value      ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+--------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 255332401450665.150271178226852        ; --                 ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                     ; --                 ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --                 ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>             ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --                 ; --          ; eda_simulation ;
+; FITTER_EFFORT                       ; Fast Fit                               ; Auto Fit           ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                 ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                 ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --                 ; --          ; --             ;
+; OPTIMIZE_POWER_DURING_FITTING       ; Off                                    ; Normal compilation ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                 ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                 ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                 ; --          ; Top            ;
+; PHYSICAL_SYNTHESIS_EFFORT           ; Fast                                   ; Normal             ; --          ; --             ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --                 ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                 ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                 ; --          ; --             ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL    ; MINIMUM                                ; Normal             ; --          ; --             ;
+; SAVE_DISK_SPACE                     ; Off                                    ; On                 ; --          ; --             ;
+; SMART_RECOMPILE                     ; On                                     ; Off                ; --          ; --             ;
+; TIMEQUEST_MULTICORNER_ANALYSIS      ; Off                                    ; On                 ; --          ; --             ;
++-------------------------------------+----------------------------------------+--------------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -103,12 +105,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:34     ; 1.0                     ; 1027 MB             ; 00:00:48                           ;
-; Fitter                    ; 00:03:04     ; 1.0                     ; 1606 MB             ; 00:03:27                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 840 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:15     ; 2.4                     ; 1179 MB             ; 00:00:16                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 1079 MB             ; 00:00:02                           ;
-; Total                     ; 00:04:00     ; --                      ; --                  ; 00:04:37                           ;
+; Analysis & Synthesis      ; 00:00:29     ; 1.0                     ; 1001 MB             ; 00:00:34                           ;
+; Fitter                    ; 00:01:41     ; 1.0                     ; 1457 MB             ; 00:01:53                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 834 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:14     ; 2.8                     ; 1072 MB             ; 00:00:14                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1067 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:30     ; --                      ; --                  ; 00:02:47                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,11 +119,11 @@ agreement for further details.
 +---------------------------+------------------+----------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; D132604          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
-; Fitter                    ; D132604          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
-; Assembler                 ; D132604          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
-; TimeQuest Timing Analyzer ; D132604          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
-; EDA Netlist Writer        ; D132604          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
+; Analysis & Synthesis      ; D132611          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
+; Fitter                    ; D132611          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
+; Assembler                 ; D132611          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
+; TimeQuest Timing Analyzer ; D132611          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; D132611          ; Ubuntu 16.04.1 ; 16         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
 
 
