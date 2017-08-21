@@ -1,7 +1,16 @@
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(26): extended using "x" or "z" File: /home-local/aluno/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 26
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(31): extended using "x" or "z" File: /home-local/aluno/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 31
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(36): extended using "x" or "z" File: /home-local/aluno/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 36
-Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(57): extended using "x" or "z" File: /home-local/aluno/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 57
-Warning (10268): Verilog HDL information at memoriaDeInstrucoes.v(17): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 17
-Warning (10268): Verilog HDL information at binarioParaBCD.v(24): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/sistemaComputacional_restored/binarioParaBCD.v Line: 24
-Warning (10268): Verilog HDL information at binarioParaBCD2.v(18): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/sistemaComputacional_restored/binarioParaBCD2.v Line: 18
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(22): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 22
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(30): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 30
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(40): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 40
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(45): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 45
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(50): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 50
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(53): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 53
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(56): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 56
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(61): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 61
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(66): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 66
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(74): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 74
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(79): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 79
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(87): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 87
+Warning (10273): Verilog HDL warning at memoriaDeInstrucoes.v(104): extended using "x" or "z" File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 104
+Warning (10268): Verilog HDL information at memoriaDeInstrucoes.v(17): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/ulian/sistemaComputacional_restored/memoriaDeInstrucoes.v Line: 17
+Warning (10268): Verilog HDL information at binarioParaBCD.v(24): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/ulian/sistemaComputacional_restored/binarioParaBCD.v Line: 24
+Warning (10268): Verilog HDL information at binarioParaBCD2.v(18): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/ulian/sistemaComputacional_restored/binarioParaBCD2.v Line: 18

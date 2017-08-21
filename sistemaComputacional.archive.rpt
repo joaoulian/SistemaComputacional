@@ -1,5 +1,5 @@
 Archive Project report for sistemaComputacional
-Mon Aug 14 09:05:14 2017
+Mon Aug 21 11:59:25 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Mon Aug 14 09:05:14 2017 ;
+; Archive Project Status ; Successful - Mon Aug 21 11:59:25 2017 ;
 ; Revision Name          ; sistemaComputacional                  ;
 ; Top-level Entity Name  ; sistemaComputacional                  ;
 ; Family                 ; Cyclone IV E                          ;
@@ -50,18 +50,18 @@ Info: File Set 'Source control' contains:
     Info: Project source and settings files
     Info: Automatically detected source files
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory /home-local/aluno/sistemaComputacional_restored/
+Info (13213): Using common directory /home-local/aluno/ulian/sistemaComputacional_restored/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive '/home-local/aluno/sistemaComputacional_restored/sistemaComputacional.qar'
+Info: Generated archive '/home-local/aluno/ulian/sistemaComputacional_restored/sistemaComputacional.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'sistemaComputacional.archive.rpt'
 Info (23030): Evaluation of Tcl script /opt/intelFPGA/16.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 1053 megabytes
-    Info: Processing ended: Mon Aug 14 09:05:14 2017
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Mon Aug 21 11:59:25 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

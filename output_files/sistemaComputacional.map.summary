@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Aug 14 08:56:53 2017
+Analysis & Synthesis Status : Successful - Mon Aug 21 11:28:37 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 Revision Name : sistemaComputacional
 Top-level Entity Name : sistemaComputacional
 Family : Cyclone IV E
-Total logic elements : 5,291
-    Total combinational functions : 3,379
+Total logic elements : 5,507
+    Total combinational functions : 3,597
     Dedicated logic registers : 2,004
 Total registers : 2004
 Total pins : 192
