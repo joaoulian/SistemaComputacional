@@ -8,34 +8,33 @@ module sistemaComputacional(clock50,
 									 saidaUnidade,
 									 saidaDezenaOpcode,
 									 saidaUnidadeOpcode,
-									 opcode,
-									 dadoEscritaNovo,
-									 dadoRd,
-									 rd,
-									 imediatoExtendido22,
-									 dadoRs);
+									 btnClock);
 									 
 //Entradas
 	input clock50;
 	input reset;
 	input enter;
 	input [8:0] entradaSwitch;
+	input btnClock;
 
 //Saidas
 	wire [31:0] ulaSaida;
 	wire [31:0] dadoEscrita;
-	output [31:0] dadoEscritaNovo;
-	output [4:0] opcode;
+	wire [31:0] dadoEscritaNovo;
+	wire [4:0] opcode;
 	wire clock;
+	wire clockByTemp;
 	
 //Variaveis locais
+	wire clockByButton;
+	wire selectClock;
 	wire [31:0] pcParaEndereco;
 	wire [31:0] instrucao;
 	wire [31:0] imediatoExtendido17;
-	output [31:0] imediatoExtendido22;
-	output [31:0]	dadoRd;
+	wire [31:0] imediatoExtendido22;
+	wire [31:0]	dadoRd;
 	wire [31:0] enderecoLoad;
-	output [31:0]	dadoRs;
+	wire [31:0]	dadoRs;
 	wire [31:0] dadoEscritaULA;
 	wire [31:0] vaiPraULA;
 	wire		  selecionaRegEscrita;
@@ -48,7 +47,7 @@ module sistemaComputacional(clock50,
 	wire [2:0] pcControle;
 	wire [4:0] rs;
 	wire [4:0] rt;
-	output [4:0] rd;
+	wire [4:0] rd;
 	wire [4:0] endEscrita;
 	wire [4:0] endEscritaNovo;
 	wire zero;
@@ -82,7 +81,16 @@ module sistemaComputacional(clock50,
 	assign enderecoJump = instrucao[26:0];
 	
 	temporizador t (.clockin(clock50),
-						 .clockout(clock));
+						 .clockout(clockByTemp));
+						 
+	assign clockByButton = btnClock;
+					
+	mux muxClock (.entrada1(clockByTemp),
+					  .entrada2(clockByButton),
+					  .seletor(selectClock),
+					  .saida(clock));
+	
+	assign selectClock = (opcode == 5'd19 || opcode == 5'd20) ? 1 : 0;
 		
 	contadorDePrograma PC(.clock(clock),
 							    .reset(reset),

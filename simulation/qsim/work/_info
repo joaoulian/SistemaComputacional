@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home-local/aluno/sistemaComputacional_restored/simulation/qsim
+vhard_block
+Z1 !s110 1505739476
+!i10b 1
+!s100 8A0J11HnNIBUYg`c6k59a2
+I6T>fRN6B<i:;7DLf`CH2h1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1505739473
+Z4 8sistemaComputacional.vo
+Z5 FsistemaComputacional.vo
+L0 93192
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1505739475.000000
+Z8 !s107 sistemaComputacional.vo|
+Z9 !s90 -work|work|sistemaComputacional.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vsistemaComputacional
+R1
+!i10b 1
+!s100 fbA21:AWia8ZJ8cKLh<JI3
+IZ[f@c8YRIZ<2@mg0P]46Q3
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+nsistema@computacional
+vsistemaComputacional_vlg_vec_tst
+R1
+!i10b 1
+!s100 WST4f3`Qj`]mQVl:5P?C[2
+IRi@g9X>@LdEGkX<S3f[PA1
+R2
+R0
+w1505739471
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+!s108 1505739476.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+nsistema@computacional_vlg_vec_tst

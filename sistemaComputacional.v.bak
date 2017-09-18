@@ -7,7 +7,13 @@ module sistemaComputacional(clock50,
 									 saidaNegativo,
 									 saidaUnidade,
 									 saidaDezenaOpcode,
-									 saidaUnidadeOpcode);
+									 saidaUnidadeOpcode,
+									 opcode,
+									 dadoEscritaNovo,
+									 dadoRd,
+									 rd,
+									 imediatoExtendido22,
+									 dadoRs);
 									 
 //Entradas
 	input clock50;
@@ -18,29 +24,31 @@ module sistemaComputacional(clock50,
 //Saidas
 	wire [31:0] ulaSaida;
 	wire [31:0] dadoEscrita;
-	wire [31:0] dadoEscritaNovo;
-	wire [4:0] opcode;
+	output [31:0] dadoEscritaNovo;
+	output [4:0] opcode;
 	wire clock;
 	
 //Variaveis locais
 	wire [31:0] pcParaEndereco;
 	wire [31:0] instrucao;
 	wire [31:0] imediatoExtendido17;
-	wire [31:0] imediatoExtendido22;
-	wire [31:0]	dadoRd;
-	wire [31:0]	dadoRs;
+	output [31:0] imediatoExtendido22;
+	output [31:0]	dadoRd;
+	wire [31:0] enderecoLoad;
+	output [31:0]	dadoRs;
 	wire [31:0] dadoEscritaULA;
 	wire [31:0] vaiPraULA;
 	wire		  selecionaRegEscrita;
 	wire 		  memDadosEscrita;
 	wire		  selecionaULA;
+	wire		  selecionaLoadR;
 	wire 		  selecionaRegDado;
 	wire		  selecionaEndEscrita;
 	wire [3:0] ulaControle;
 	wire [2:0] pcControle;
 	wire [4:0] rs;
 	wire [4:0] rt;
-	wire [4:0] rd;
+	output [4:0] rd;
 	wire [4:0] endEscrita;
 	wire [4:0] endEscritaNovo;
 	wire zero;
@@ -81,7 +89,8 @@ module sistemaComputacional(clock50,
 								 .controlePC(pcControle),
 								 .enderecoJump(enderecoJump),
 								 .deslocamentoBranch(imediatoExtendido17),
-								 .pc(pcParaEndereco));
+								 .pc(pcParaEndereco),
+								 .endRegister(dadoRd));
 	
 	memoriaDeInstrucoes M1(.endereco(pcParaEndereco),
 								  .instrucao(instrucao),
@@ -104,7 +113,8 @@ module sistemaComputacional(clock50,
 									 .estagioEntradaSwitch(estagioEntradaSwitch),
 									 .estagioSaidaUC(estagioSaidaUC),
 									 .selecionaLoadImediato(selecionaLoadImediato),
-									 .selecionaDadoSwitch(selecionaDadoSwitch));
+									 .selecionaDadoSwitch(selecionaDadoSwitch),
+									 .selecionaLoadR(selecionaLoadR));
 								  
 	extensor17 imediatoExtensor17 (.entrada(instrucao[16:0]),
 										    .saida(imediatoExtendido17));
@@ -166,11 +176,16 @@ module sistemaComputacional(clock50,
 					.A(dadoRd),
 					.B(vaiPraULA),
 					.ulaSaida(ulaSaida));
+					
+	mux muxLoadR (.entrada1(imediatoExtendido22),
+					  .entrada2(dadoRs),
+					  .seletor(selecionaLoadR),
+					  .saida(enderecoLoad));
 	
 	memoriaDeDados memDados (.clock(clock),
-									 .enderecoLeitura(imediatoExtendido22),
+									 .enderecoLeitura(enderecoLoad),
 									 .dadoLeitura(saidaMemDados),
-									 .enderecoEscrita(imediatoExtendido22),
+									 .enderecoEscrita(enderecoLoad),
 									 .dadoEscrita(dadoRd),
 									 .memDadosControle(memDadosEscrita));
 	
